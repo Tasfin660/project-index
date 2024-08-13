@@ -1,0 +1,58 @@
+.main-nav a.active {
+	background: var(--color-white);
+	color: var(--color-primary);
+}
+
+.project-nav::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	opacity: 0;
+	width: 100%;
+	height: 3px;
+	background-color: var(--color-primary);
+	border-radius: 100px;
+	transition: all 0.3s;
+}
+
+.project-nav:hover::after {
+	bottom: -10px;
+	opacity: 1;
+}
+
+.project-nav-active::after {
+	bottom: -10px;
+	opacity: 1;
+}
+
+.serial-clip {
+	clip-path: polygon(100% 0, 100% 70%, 50% 100%, 0 70%, 0 0);
+}
+
+.auth-form {
+	background-image: url('../../public/auth2.jpg');
+	background-size: cover;
+	background-position: center center;
+}
+
+.user-project-scroll::after {
+	content: '';
+	position: absolute;
+	top: 65px;
+	left: 248px;
+	height: 210px;
+	width: 40px;
+	background-color: var(--color-secondary);
+}
+
+.aaa::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(-30deg, #4158d0, #c850c0, #ffcc70);
+	opacity: 0.6;
+}

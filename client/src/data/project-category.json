@@ -1,0 +1,92 @@
+[
+	{
+		"id": "514721",
+		"title": "E-commerce Platforms",
+		"description": "Online stores, auction sites, product customization tools.",
+		"image": "ecommerce"
+	},
+	{
+		"id": "850657",
+		"title": "Social Networks",
+		"description": "Niche community platforms, chat applications, collaboration tools.",
+		"image": "social"
+	},
+	{
+		"id": "387130",
+		"title": "Educational Tools",
+		"description": "Online courses, quiz platforms, interactive tutorials.",
+		"image": "educational"
+	},
+	{
+		"id": "183335",
+		"title": "Portfolio Websites",
+		"description": "Personal portfolios, case study showcases, resume builders.",
+		"image": "portfolio"
+	},
+	{
+		"id": "813767",
+		"title": "Productivity Apps",
+		"description": "Task managers, calendar apps, habit trackers.",
+		"image": "productivity"
+	},
+	{
+		"id": "913127",
+		"title": "Content Management",
+		"description": "Blogging platforms, documentation tools, content aggregators.",
+		"image": "cms"
+	},
+	{
+		"id": "347719",
+		"title": "Data Visualization",
+		"description": "Dashboards, interactive charts, real-time data displays.",
+		"image": "dashboard"
+	},
+	{
+		"id": "739849",
+		"title": "Entertainment Platforms",
+		"description": "Music streaming, video platforms, game websites.",
+		"image": "entertainment"
+	},
+	{
+		"id": "532911",
+		"title": "Health and Fitness",
+		"description": "Workout trackers, meal planning, wellness blogs.",
+		"image": "health"
+	},
+	{
+		"id": "296751",
+		"title": "Finance Management",
+		"description": "Budgeting apps, expense trackers, investment portfolios.",
+		"image": "finance"
+	},
+	{
+		"id": "968213",
+		"title": "Booking Systems",
+		"description": "Appointment scheduling, event booking, travel reservations.",
+		"image": "booking"
+	},
+	{
+		"id": "806038",
+		"title": "Social Good",
+		"description": "Charity platforms, environmental awareness sites, community initiatives.",
+		"image": "environmental"
+	},
+	{
+		"id": "982079 ",
+		"title": "Personalization Engines",
+		"description": "Recommendation systems, customizable user interfaces, preference-based content.",
+		"image": "personalization"
+	},
+	{
+		"id": "261210",
+		"title": "AI/ML Applications",
+		"description": "Chatbots, predictive models, sentiment analysis tools.",
+		"image": "ai"
+	},
+	{
+		"id": "278302",
+		"title": "API Integrations",
+		"description": "Third-party service connectors, API aggregators, automation tools.",
+		"image": "api"
+	}
+]
