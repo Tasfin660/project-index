@@ -11,7 +11,7 @@ const UserSettings = () => {
 					<input
 						type="text"
 						placeholder="Tasfin Hasan"
-						className="border-b border-slate-50/60 bg-transparent pb-0.5 focus:outline-none"
+						className="border-b border-slate-50/60 bg-transparent pb-0.5 focus:border-cl-primary focus:outline-none"
 					/>
 				</div>
 				<div className="flex flex-col gap-1.5">
@@ -21,7 +21,7 @@ const UserSettings = () => {
 					<input
 						type="text"
 						placeholder="Tasfin660"
-						className="border-b border-slate-50/60 bg-transparent pb-0.5 focus:outline-none"
+						className="border-b border-slate-50/60 bg-transparent pb-0.5 focus:border-cl-primary focus:outline-none"
 					/>
 				</div>
 				<div className="flex flex-col gap-1.5">
@@ -31,7 +31,7 @@ const UserSettings = () => {
 					<input
 						type="text"
 						placeholder="https://i.imgur.com/HoKv53T.jpg"
-						className="border-b border-slate-50/60 bg-transparent pb-0.5 focus:outline-none"
+						className="border-b border-slate-50/60 bg-transparent pb-0.5 focus:border-cl-primary focus:outline-none"
 					/>
 				</div>
 				<div className="flex flex-col gap-1.5">
@@ -57,7 +57,7 @@ const UserSettings = () => {
 					<input
 						type="text"
 						placeholder="tasfinhasan660@gmail.com"
-						className="border-b border-slate-50/60 bg-transparent pb-0.5 focus:outline-none"
+						className="border-b border-slate-50/60 bg-transparent pb-0.5 focus:border-cl-primary focus:outline-none"
 					/>
 				</div>
 				<div className="flex flex-col gap-1.5">
@@ -66,7 +66,7 @@ const UserSettings = () => {
 					</label>
 					<input
 						type="password"
-						className="border-b border-slate-50/60 bg-transparent pb-0.5 focus:outline-none"
+						className="border-b border-slate-50/60 bg-transparent pb-0.5 focus:border-cl-primary focus:outline-none"
 					/>
 				</div>
 				<div className="flex flex-col gap-1.5">
@@ -75,7 +75,7 @@ const UserSettings = () => {
 					</label>
 					<input
 						type="password"
-						className="border-b border-slate-50/60 bg-transparent pb-0.5 focus:outline-none"
+						className="border-b border-slate-50/60 bg-transparent pb-0.5 focus:border-cl-primary focus:outline-none"
 					/>
 				</div>
 				<p className="absolute -top-9 left-1/2 -translate-x-1/2 bg-cl-secondary px-2 text-cl-primary">

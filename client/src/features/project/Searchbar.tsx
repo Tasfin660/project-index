@@ -6,7 +6,7 @@ const Searchbar = () => {
 			<input
 				type="text"
 				placeholder="Serial Code #"
-				className="w-64 rounded-full bg-cl-gray-neutral py-2 pl-4 pr-11 text-sm focus:outline-none"
+				className="w-64 rounded-full bg-cl-gray-grad py-2 pl-4 pr-11 text-sm focus:outline-none"
 				required
 			/>
 			<button

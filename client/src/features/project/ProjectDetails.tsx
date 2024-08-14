@@ -8,7 +8,7 @@ const ProjectDetails = ({
 	children: ReactNode;
 }) => {
 	return (
-		<div className="rounded-lg border-2 border-blue-600/20 bg-blue-900/10 p-4 leading-7">
+		<div className="w-[800px] rounded-lg border-2 border-blue-600/20 bg-blue-900/10 p-4 leading-7">
 			{children}
 			{query === 'overview' && (
 				<p>
@@ -174,42 +174,6 @@ const ProjectDetails = ({
 					<li>
 						Social Media Integration: Share buttons and embedded social media
 						feeds.
-					</li>
-				</ul>
-			)}
-			{query === 'setup' && (
-				<ul className="ml-4 list-decimal space-y-4 font-heading">
-					<li className="w-max bg-cl-gray-neutral px-2 text-orange-200">
-						git clone "/repository-url/"
-					</li>
-					<li>
-						<p className="w-max bg-cl-gray-neutral px-2 text-orange-200">
-							npm install
-						</p>
-					</li>
-					<li>
-						Create a .env file and configure environment variables like API
-						keys, database URLs, etc.
-					</li>
-					<li>
-						<p className="w-max bg-cl-gray-neutral px-2 text-orange-200">
-							npm run start
-						</p>
-					</li>
-					<li>
-						<p className="w-max bg-cl-gray-neutral px-2 text-orange-200">
-							npm run build
-						</p>
-					</li>
-					<li>
-						<p className="w-max bg-cl-gray-neutral px-2 text-orange-200">
-							npm run test
-						</p>
-					</li>
-					<li>
-						<p className="w-max bg-cl-gray-neutral px-2 text-orange-200">
-							npm run deploy
-						</p>
 					</li>
 				</ul>
 			)}

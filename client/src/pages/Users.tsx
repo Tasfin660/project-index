@@ -3,7 +3,7 @@ import UserOverview from '../features/user/UserOverview';
 const Users = () => {
 	return (
 		<main className="container grid h-max grid-cols-5 justify-center gap-8 pb-16 pt-4">
-			<div className="col-span-5 grid grid-cols-[auto_1fr_auto] gap-4 rounded-md bg-cl-gray-light px-6 py-3">
+			<div className="col-span-5 grid grid-cols-[auto_1fr_auto] gap-4 rounded-md bg-cl-gray-neutral px-6 py-3">
 				<span>Filter By:</span>
 				<select className="w-max rounded-full bg-cl-gray-dark px-2 py-1 text-sm focus:outline-none">
 					<option value="all">All Developers</option>

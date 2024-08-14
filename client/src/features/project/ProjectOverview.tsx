@@ -6,17 +6,14 @@ import { Link } from 'react-router-dom';
 const ProjectOverview = () => {
 	return (
 		<div className="relative w-[330px] shrink-0 rounded-lg border-2 border-transparent bg-cl-secondary-grad p-4 duration-300 hover:border-slate-50">
-			<h2 className="font-heading text-2xl font-medium">Chrome Dino Game</h2>
-			<div className="mb-3 mt-1.5 flex gap-2">
-				<div className="w-max rounded-full bg-emerald-500 px-2 pt-[1px] text-xs font-medium">
+			<h2 className="font-heading text-2xl font-medium">Dinasour Vault</h2>
+			<div className="mb-3 mt-1 space-x-2">
+				<span className="rounded-lg bg-gradient-to-br from-emerald-500 to-emerald-600 px-1.5 py-0.5 text-xs">
 					Completed
-				</div>
-				<div className="w-max rounded-full border px-2 pt-[1px] text-xs font-medium text-cl-white">
-					Not enrolled
-				</div>
-				{/* <div className="w-max rounded-full border border-transparent bg-cl-white px-2 pt-[1px] text-xs font-medium text-cl-gray-dark">
+				</span>
+				<span className="rounded-lg bg-cl-white px-1.5 py-0.5 text-xs font-medium text-cl-gray-dark">
 					Enrolled
-				</div> */}
+				</span>
 			</div>
 			<p className="line-clamp-3 break-all text-xs">
 				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae,

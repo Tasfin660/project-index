@@ -25,12 +25,10 @@ const Header = () => {
 			<div className="mt-3 w-1/2 space-y-1 text-sm">
 				<p>
 					Unlock Your Potential: Explore Web Dev Projects to Build Your
-					Portfolio with Practical Experience.
-				</p>
-				<p>
-					Discover innovative ideas, enhance your coding skills, and create
-					stunning web applications. Join a community of passionate developers
-					and take your career to the next level.
+					Portfolio with Practical Experience. Discover innovative ideas,
+					enhance your coding skills, and create stunning web applications. Join
+					a community of passionate developers and take your career to the next
+					level.
 				</p>
 			</div>
 			<div className="mb-16 mt-8 flex gap-6">

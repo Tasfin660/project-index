@@ -9,16 +9,14 @@ import {
 	FaDribbble,
 	FaReact,
 	FaRegStopCircle,
-	FaVuejs,
-	FaWhatsapp,
-	FaYoutube
+	FaVuejs
 } from 'react-icons/fa';
 import { FaRepeat } from 'react-icons/fa6';
+import { IoLogoWhatsapp, IoLogoYoutube } from 'react-icons/io';
+import { IoLocationSharp } from 'react-icons/io5';
+import { MdEmail } from 'react-icons/md';
 import { RiSvelteFill } from 'react-icons/ri';
 import ProgressProvider from '../ui/progressbar/ProgressProvider';
-import { SiSvelte } from 'react-icons/si';
-import { IoLogoWhatsapp, IoLogoYoutube } from 'react-icons/io';
-import { MdEmail } from 'react-icons/md';
 const Stats = () => {
 	return (
 		<main className="container mb-20 mt-16 w-max space-y-6">
@@ -140,14 +138,19 @@ const Stats = () => {
 				<div className="aaa relative size-20 shrink-0 overflow-hidden rounded-full">
 					<img src="https://i.imgur.com/HoKv53T.jpg" alt="" />
 				</div>
-				<p className="text-sm">
-					Meet Tasfin, a self-learner and dedicated developer with a passion for
-					coding. Currently diving into the world of React, Tasfin created
-					Project-Index as a practice project to hone his skills. With a keen
-					interest in web development and a knack for turning ideas into
-					reality, he's always exploring new technologies and seeking innovative
-					ways to deliver delightful user experiences.
-				</p>
+				<div>
+					<p className="text-sm">
+						Meet Tasfin, a dedicated self-learner passionate about coding.
+						Currently exploring React, he created Project-Index to hone his
+						skills. With a strong interest in web development, Tasfin is always
+						seeking innovative ways to turn ideas into delightful user
+						experiences.
+					</p>
+					<p className="mt-1.5 flex items-center gap-1 text-sm">
+						<IoLocationSharp className="-translate-y-[1px] text-lg text-cl-primary" />
+						Rampura, Dhaka, Bangladesh
+					</p>
+				</div>
 			</section>
 			<section className="grid grid-cols-[repeat(4,250px)] justify-center gap-8 rounded-xl border-blue-600/20">
 				<div className="flex flex-col items-center">
