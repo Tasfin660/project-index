@@ -8,7 +8,7 @@ const ProjectDetails = ({
 	children: ReactNode;
 }) => {
 	return (
-		<div className="w-[800px] rounded-lg border-2 border-blue-600/20 bg-blue-900/10 p-4 leading-7">
+		<div className="w-[800px] rounded border-2 border-blue-600/20 bg-blue-900/10 p-4 leading-7">
 			{children}
 			{query === 'overview' && (
 				<p>
