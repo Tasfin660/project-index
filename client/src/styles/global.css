@@ -3,6 +3,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+	.blue-bg {
+		@apply rounded-xl border-2 border-blue-600/20 bg-blue-900/10;
+	}
+}
+
 /* app scrollbar */
 ::-webkit-scrollbar {
 	width: 4px;
@@ -21,4 +27,22 @@
 
 ::-webkit-scrollbar-thumb:hover {
 	background-color: var(--color-primary-shades);
+}
+
+:root {
+	--nav-height: 5rem;
+}
+
+input,
+textarea,
+select {
+	width: 100%;
+	background-color: transparent;
+}
+
+input,
+textarea,
+select,
+button {
+	outline: none;
 }

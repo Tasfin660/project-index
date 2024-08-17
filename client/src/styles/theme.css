@@ -1,11 +1,16 @@
 :root {
 	/* primary color set */
-	--color-primary-tints: theme(colors.sky.400);
 	--color-primary: theme(colors.sky.500);
+	--color-primary-tints: theme(colors.sky.400);
 	--color-primary-shades: theme(colors.sky.600);
 
-	/* extra color set */
+	/* secondary color set */
 	--color-secondary: theme(colors.slate.950);
+
+	/* extra color set */
+	--color-red: theme(colors.rose.600);
+	--color-green: theme(colors.emerald.500);
+	--color-yellow: theme(colors.yellow.400);
 
 	/* gray color set */
 	--color-gray-light: #404756;
@@ -24,25 +29,34 @@
 		rgba(56, 189, 248, 0.1),
 		rgba(7, 89, 133, 0.1)
 	);
+	--color-red-gradient: linear-gradient(
+		to bottom right,
+		theme(colors.rose.600),
+		theme(colors.rose.800)
+	);
+	--color-green-gradient: linear-gradient(
+		to bottom right,
+		theme(colors.emerald.500),
+		theme(colors.emerald.600)
+	);
+	--color-yellow-gradient: linear-gradient(
+		to bottom right,
+		theme(colors.yellow.400),
+		theme(colors.yellow.600)
+	);
 	--color-gray-gradient: conic-gradient(
 		from 90deg at -10% 100%,
 		#2b303b 0deg,
 		#2b303b 90deg,
 		#16181d 1turn
 	);
-	--color-emerald-gradient: linear-gradient(
-		to bottom right,
-		var(--color-primary-tints),
-		var(--color-primary-shades)
-	);
+	--color-user-gradient: linear-gradient(-30deg, #4158d0, #c850c0, #ffcc70);
+}
 
-	/* box shadows */
-	--shadow-app: inset 0 0 0.5px 1px hsla(0, 0%, 100%, 0.1),
+/* P8bTcw_j;+b:aLHHn\/H 
+
+		--shadow-app: inset 0 0 0.5px 1px hsla(0, 0%, 100%, 0.1),
 		0 0 0 1px hsla(230, 13%, 9%, 0.075), 0 0.3px 0.4px hsla(230, 13%, 9%, 0.02),
 		0 0.9px 1.5px hsla(230, 13%, 9%, 0.045),
 		0 3.5px 6px hsla(230, 13%, 9%, 0.09);
-
-	/* variables */
-	--nav-height: 5rem;
-}
-/* P8bTcw_j;+b:aLHHn\/H */
+*/

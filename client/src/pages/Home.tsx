@@ -1,18 +1,18 @@
-import category from '../data/project-category.json';
-import ProjectCategory from '../features/project/ProjectCategory';
-import Header from '../ui/layouts/Header';
+import projectCategories from '../data/project-categories.json'
+import ProjectCategory from '../features/project/ProjectCategory'
+import Header from '../ui/layouts/Header'
 
 const Home = () => {
 	return (
-		<main>
+		<main className="container my-16 space-y-16">
 			<Header />
-			<section className="container grid grid-cols-[repeat(4,300px)] items-center justify-center gap-10 pb-16">
-				{category.map(el => (
-					<ProjectCategory key={el.id} data={el} />
+			<section className="grid grid-cols-[repeat(4,300px)] justify-center gap-10">
+				{projectCategories.map(category => (
+					<ProjectCategory key={category.id} data={category} />
 				))}
 			</section>
 		</main>
-	);
-};
+	)
+}
 
-export default Home;
+export default Home

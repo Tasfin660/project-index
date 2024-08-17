@@ -1,13 +1,19 @@
-import { MdKeyboardArrowRight } from 'react-icons/md';
-import { Link } from 'react-router-dom';
-import type { ProjectCategory } from '../../types/projects';
+import { MdKeyboardArrowRight } from 'react-icons/md'
+import { Link } from 'react-router-dom'
+
+interface ProjectCategory {
+	id: string
+	title: string
+	description: string
+	image: string
+}
 
 const ProjectCategory = ({ data }: { data: ProjectCategory }) => {
-	const { title, description, image } = data;
-	const link = title.split(' ').join('-').toLowerCase();
+	const { title, description, image } = data
+	const link = title.split(' ').join('-').toLowerCase()
 
 	return (
-		<div className="rounded-lg border border-slate-50/10 bg-gradient-to-b from-slate-800/80 to-slate-900 p-6 duration-300 hover:border-cl-primary-shades">
+		<div className="hover:border-clr-primary-shades cursor-context-menu rounded-lg border border-slate-50/10 bg-gradient-to-b from-slate-800/80 to-slate-900 p-6 duration-300">
 			<div className="flex items-start justify-between">
 				<img
 					src={`/project-category/${image}.png`}
@@ -20,12 +26,10 @@ const ProjectCategory = ({ data }: { data: ProjectCategory }) => {
 					<MdKeyboardArrowRight />
 				</Link>
 			</div>
-			<h2 className="mb-1 mt-6 cursor-context-menu font-heading text-xl font-bold">
-				{title}
-			</h2>
-			<p className="line-clamp-2 cursor-context-menu text-sm">{description}</p>
+			<h2 className="mb-1 mt-6 font-heading text-xl font-bold">{title}</h2>
+			<p className="line-clamp-2 text-sm">{description}</p>
 		</div>
-	);
-};
+	)
+}
 
-export default ProjectCategory;
+export default ProjectCategory

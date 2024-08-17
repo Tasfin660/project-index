@@ -1,8 +1,8 @@
 import { createBrowserRouter } from 'react-router-dom';
 import Admin from '../pages/Admin';
-import Authentication from '../pages/Authentication';
+import Auth from '../pages/Auth';
+import ErrorPage from '../pages/ErrorPage';
 import Home from '../pages/Home';
-import PageNotFound from '../pages/PageNotFound';
 import Project from '../pages/Project';
 import Projects from '../pages/Projects';
 import Stats from '../pages/Stats';
@@ -14,7 +14,7 @@ import MainLayout from '../ui/layouts/MainLayout';
 const router = createBrowserRouter([
 	{
 		element: <MainLayout />,
-		errorElement: <PageNotFound />,
+		errorElement: <ErrorPage />,
 		children: [
 			{
 				path: '/',
@@ -50,8 +50,8 @@ const router = createBrowserRouter([
 				element: <Stats />
 			},
 			{
-				path: 'auth/:authForm',
-				element: <Authentication />
+				path: 'auth/:form',
+				element: <Auth />
 			}
 		]
 	}

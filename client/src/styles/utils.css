@@ -1,8 +1,10 @@
+/* Main navigation active class style */
 .main-nav a.active {
 	background: var(--color-white);
 	color: var(--color-primary);
 }
 
+/* Project navigation active class style */
 .project-nav::after {
 	content: '';
 	position: absolute;
@@ -26,16 +28,19 @@
 	opacity: 1;
 }
 
+/* Project card serial clip-path */
 .serial-clip {
 	clip-path: polygon(100% 0, 100% 70%, 50% 100%, 0 70%, 0 0);
 }
 
+/* Auth form background image */
 .auth-form {
-	background-image: url('../../public/auth2.jpg');
+	background-image: url('../../public/auth-bg.jpg');
 	background-size: cover;
 	background-position: center center;
 }
 
+/* User projects scrollbar */
 .user-project-scroll::after {
 	content: '';
 	position: absolute;
@@ -46,13 +51,14 @@
 	background-color: var(--color-secondary);
 }
 
-.aaa::before {
+/* Stat page owner img gradient */
+.stat-img::before {
 	content: '';
 	position: absolute;
 	top: 0;
 	left: 0;
 	height: 100%;
 	width: 100%;
-	background-image: linear-gradient(-30deg, #4158d0, #c850c0, #ffcc70);
+	background-image: var(--color-user-gradient);
 	opacity: 0.6;
 }
