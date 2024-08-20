@@ -1,26 +1,32 @@
-import { useRef, useState } from 'react'
+import { useEffect, useState } from 'react'
 import {
 	MdOutlineKeyboardArrowLeft,
 	MdOutlineKeyboardArrowRight
 } from 'react-icons/md'
 
 const ProjectSlider = () => {
-	const [imgIdx, setImgIdx] = useState(0)
-	const sliderRef = useRef(null)
+	const [imgIdx, setImgIdx] = useState(() =>
+		localStorage.getItem('imgIdx')
+			? Number(JSON.parse(localStorage.getItem('imgIdx') as string))
+			: 0
+	)
 
-	const handleLeftSlider = () => {
-		if (imgIdx > 0) setImgIdx(imgIdx - 1)
-	}
+	const handleLeftSlider = () =>
+		imgIdx > 0 ? setImgIdx(imgIdx - 1) : setImgIdx(19)
 
-	const handleRightSlider = () => {
-		if (imgIdx < 5) setImgIdx(imgIdx + 1)
-	}
+	const handleRightSlider = () =>
+		imgIdx < 19 ? setImgIdx(imgIdx + 1) : setImgIdx(0)
+
+	useEffect(() => {
+		localStorage.setItem('imgIdx', JSON.stringify(imgIdx))
+	}, [imgIdx])
 
 	return (
 		<div className="relative flex overflow-hidden rounded">
-			<div className="flex duration-1000" ref={sliderRef}>
-				{Array.from({ length: 6 }, (_, i) => (
+			<div className="flex duration-1000">
+				{Array.from({ length: 20 }, (_, i) => (
 					<img
+						key={i}
 						src={`/project-inspirations/img-${i}.jpg`}
 						alt={`img ${i}`}
 						className="duration-[0.6s]"
@@ -37,7 +43,7 @@ const ProjectSlider = () => {
 				<p className="translate-y-[1px]">
 					Inspirational Ideas
 					<span className="ml-2.5 rounded-full bg-clr-white px-2 py-[1px] text-sm font-semibold text-clr-gray-dark">
-						{imgIdx + 1}/6
+						{imgIdx + 1}/20
 					</span>
 				</p>
 				<button

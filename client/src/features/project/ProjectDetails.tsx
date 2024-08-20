@@ -44,7 +44,7 @@ const ProjectDetails = ({ title, status, developers }: ProjectDetails) => {
 						{status}
 					</span>
 					{isEnrolled && (
-						<span className="rounded-sm bg-clr-white px-1.5 py-0.5 font-semibold text-clr-gray-dark">
+						<span className="smooth-rendering rounded-sm bg-clr-white px-1.5 py-0.5 font-semibold text-clr-gray-dark">
 							Enrolled
 						</span>
 					)}

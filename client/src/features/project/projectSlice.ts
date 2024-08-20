@@ -59,7 +59,25 @@ const initialState: ProjectState = {
 const projectSlice = createSlice({
 	name: 'project',
 	initialState,
-	reducers: {},
+	reducers: {
+		toggleDevelopersList(state, action) {
+			if (state.project?.developers?.includes(action.payload))
+				state.project.developers = state.project.developers.filter(
+					id => id !== action.payload
+				)
+			else state.project?.developers?.push(action.payload)
+		},
+		toggleStar(state, action) {
+			if (state.project?.stars?.includes(action.payload))
+				state.project.stars = state.project.stars.filter(
+					id => id !== action.payload
+				)
+			else state.project?.stars?.push(action.payload)
+		},
+		setStatus(state, action) {
+			if (state.project) state.project.status = action.payload
+		}
+	},
 	extraReducers: builder => {
 		builder
 			.addCase(fetchProject.pending, state => {
@@ -101,7 +119,8 @@ const projectSlice = createSlice({
 	}
 })
 
-// export {} = projectSlice.actions
+export const { toggleDevelopersList, toggleStar, setStatus } =
+	projectSlice.actions
 
 export default projectSlice.reducer
 

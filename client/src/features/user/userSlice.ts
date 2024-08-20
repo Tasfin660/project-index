@@ -83,3 +83,12 @@ export default userSlice.reducer
 
 export const getUsers = (state: { user: UserState }) => state.user.users
 export const getUser = (state: { user: UserState }) => state.user.user
+/*
+toggleProjectsList(state, action) {
+	if (state.user?.projects?.includes(action.payload))
+		state.user.projects = state.user.projects.filter(
+			id => id !== action.payload
+		)
+	else state.user?.projects?.push(action.payload)
+}
+*/

@@ -8,7 +8,7 @@ import { getUser } from '../user/userSlice'
 
 const ProjectOverview = ({ project, i }: { project: Project; i: number }) => {
 	const user = useAppSelector(getUser)
-	const { _id, title, category, description, status, starred, developers } =
+	const { _id, title, category, description, status, stars, developers } =
 		project || {}
 
 	const isEnrolled = developers?.includes(user?._id as string)
@@ -32,7 +32,7 @@ const ProjectOverview = ({ project, i }: { project: Project; i: number }) => {
 			<p className="my-4 line-clamp-3 text-xs">{description}</p>
 			<div className="flex gap-3">
 				<div className="flex items-center gap-1.5 rounded-full bg-slate-50/10 px-2.5 py-0.5 text-sm">
-					<TiStarFullOutline /> {starred?.length}
+					<TiStarFullOutline /> {stars?.length}
 				</div>
 				<div className="flex w-max items-center gap-1.5 rounded-full bg-slate-50/10 px-2.5 py-0.5 text-sm">
 					<HiUser /> {developers?.length}

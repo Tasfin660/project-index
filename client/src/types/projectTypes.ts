@@ -9,8 +9,8 @@ interface Project {
 		username: string
 		avatar: string
 	}
-	status?: string
-	starred?: string[]
+	status?: 'Completed' | 'Ongoing' | 'Postponed'
+	stars?: string[]
 	developers?: string[]
 	created_at?: string
 }

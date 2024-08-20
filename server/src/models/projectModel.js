@@ -22,7 +22,7 @@ const ProjectSchema = mongoose.Schema({
 		type: String,
 		required: true
 	},
-	starred: [
+	stars: [
 		{
 			type: mongoose.Schema.Types.ObjectId,
 			ref: 'users',

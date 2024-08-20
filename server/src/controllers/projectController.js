@@ -97,12 +97,20 @@ const createProject = async (req, res) => {
 			...req.body,
 			owner: req.userId,
 			status: 'Ongoing',
-			starred: [req.userId],
+			stars: [req.userId],
 			developers: [req.userId],
 			created_at: new Date()
 		}
 		const newProject = new ProjectModel(project)
 		await newProject.save()
+		await UserModel.updateOne(
+			{ _id: req.userId },
+			{
+				$addToSet: {
+					projects: newProject._id
+				}
+			}
+		)
 		return res.status(201).json({
 			status: 'success',
 			message: 'New project has successfully created.',
@@ -122,4 +130,143 @@ const createProject = async (req, res) => {
 	}
 }
 
-export { getProjects, getProject, getStats, createProject }
+const updateDevelopers = async (req, res) => {
+	try {
+		const { projectId } = req.body
+		const project = await ProjectModel.findById(projectId)
+
+		if (project.developers.includes(req.userId)) {
+			await ProjectModel.updateOne(
+				{
+					_id: projectId
+				},
+				{
+					$pull: { developers: req.userId }
+				}
+			)
+			await UserModel.updateOne(
+				{
+					_id: req.userId
+				},
+				{
+					$pull: { projects: projectId }
+				}
+			)
+			return res.status(200).json({
+				status: 'success',
+				message: `User was removed from project developers list. Project was removed from user projects list.`
+			})
+		} else {
+			await ProjectModel.updateOne(
+				{
+					_id: projectId
+				},
+				{
+					$addToSet: { developers: req.userId }
+				}
+			)
+			await UserModel.updateOne(
+				{
+					_id: req.userId
+				},
+				{
+					$addToSet: { projects: projectId }
+				}
+			)
+			return res.status(200).json({
+				status: 'success',
+				message: `User was added to project developers list. Project was added to user projects list.`
+			})
+		}
+	} catch (err) {
+		return res
+			.status(500)
+			.json({ message: 'Internal server error.', err: err.message })
+	}
+}
+
+const updateStars = async (req, res) => {
+	try {
+		const { projectId } = req.body
+		const project = await ProjectModel.findById(projectId)
+
+		if (project.stars.includes(req.userId)) {
+			await ProjectModel.updateOne(
+				{
+					_id: projectId
+				},
+				{
+					$pull: { stars: req.userId }
+				}
+			)
+			return res.status(200).json({
+				status: 'success',
+				message: `Removed a star from ${project.title}.`
+			})
+		} else {
+			await ProjectModel.updateOne(
+				{
+					_id: projectId
+				},
+				{
+					$addToSet: { stars: req.userId }
+				}
+			)
+			return res
+				.status(200)
+				.json({ status: 'success', message: `${project.title} got a star.` })
+		}
+	} catch (err) {
+		return res
+			.status(500)
+			.json({ message: 'Internal server error.', err: err.message })
+	}
+}
+
+const deleteProject = async (req, res) => {
+	try {
+		const { projectId } = req.params
+		await ProjectModel.deleteOne({
+			_id: projectId
+		})
+		await UserModel.updateMany(
+			{ projects: projectId },
+			{ $pull: { projects: projectId } }
+		)
+		res
+			.status(200)
+			.json({ status: 'success', message: 'Successfully deleted project.' })
+	} catch (err) {
+		return res
+			.status(500)
+			.json({ message: 'Internal server error.', err: err.message })
+	}
+}
+
+const updateStatus = async (req, res) => {
+	try {
+		const { projectId, value } = req.body
+		const project = await ProjectModel.findById(projectId)
+		project.status = value
+		await project.save()
+		res.status(200).json({
+			status: 'success',
+			message: `Project: ${projectId} status updated to ${value}.`
+		})
+	} catch (err) {
+		return res
+			.status(500)
+			.json({ message: 'Internal server error.', err: err.message })
+	}
+}
+
+export {
+	getProjects,
+	getProject,
+	getStats,
+	createProject,
+	updateDevelopers,
+	updateStars,
+	updateStatus,
+	deleteProject
+}

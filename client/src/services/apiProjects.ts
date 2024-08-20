@@ -19,4 +19,63 @@ const createProject = async (projectData: Project, token: string) => {
 	}
 }
 
-export { createProject }
+const updateDevelopers = async (projectId: string, token: string) => {
+	await fetch(`${import.meta.env.VITE_API}/projects/update-developers`, {
+		method: 'PUT',
+		headers: {
+			'Content-Type': 'application/json',
+			'Authorization': `Bearer ${token}`
+		},
+		body: JSON.stringify({
+			projectId
+		})
+	})
+}
+
+const updateStars = async (projectId: string, token: string) => {
+	await fetch(`${import.meta.env.VITE_API}/projects/update-stars`, {
+		method: 'PUT',
+		headers: {
+			'Content-Type': 'application/json',
+			'Authorization': `Bearer ${token}`
+		},
+		body: JSON.stringify({
+			projectId
+		})
+	})
+}
+
+const deleteProject = async (projectId: string, token: string) => {
+	await fetch(`${import.meta.env.VITE_API}/projects/${projectId}`, {
+		method: 'DELETE',
+		headers: {
+			Authorization: `Bearer ${token}`
+		}
+	})
+}
+
+const updateStatus = async (
+	projectId: string,
+	value: string,
+	token: string
+) => {
+	await fetch(`${import.meta.env.VITE_API}/projects/update-status`, {
+		method: 'PUT',
+		headers: {
+			'Content-Type': 'application/json',
+			'Authorization': `Bearer ${token}`
+		},
+		body: JSON.stringify({
+			projectId,
+			value
+		})
+	})
+}
+
+export {
+	createProject,
+	deleteProject,
+	updateDevelopers,
+	updateStars,
+	updateStatus
+}
