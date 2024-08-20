@@ -1,10 +1,11 @@
 import UserModel from '../models//userModel.js'
+import ProjectModel from '../models/projectModel.js'
 
 const getUsers = async (req, res) => {
 	try {
 		const users = await UserModel.find(
-			{ role: 'User' },
-			{ fullname: 1, username: 1, avatar: 1, framework: 1, github: 1 }
+			{},
+			{ projects: 0, email: 0, __v: 0, password: 0 }
 		)
 		return res.status(200).json({
 			status: 'success',
@@ -28,10 +29,14 @@ const getUser = async (req, res) => {
 
 		if (!user) throw new Error('404')
 
+		const projects = await ProjectModel.find({
+			_id: { $in: user.projects }
+		})
+
 		return res.status(200).json({
 			status: 'success',
 			message: 'User retrieved successfully.',
-			data: user
+			data: { ...user._doc, projects }
 		})
 	} catch (err) {
 		if (err.message.includes('404'))
@@ -47,4 +52,23 @@ const getUser = async (req, res) => {
 	}
 }
 
-export { getUsers, getUser }
+const updateAdminStatus = async (req, res) => {
+	try {
+		const user = await UserModel.findById({
+			_id: req.userId
+		})
+		user.admin_status = req.body.status
+		await user.save()
+		console.log(req.userId)
+		res.status(200).json({
+			status: 'success',
+			message: `User admin status updated to ${req.body.status}`
+		})
+	} catch (err) {
+		return res
+			.status(500)
+			.json({ message: 'Internal server error.', err: err.message })
+	}
+}
+
+export { getUser, getUsers, updateAdminStatus }

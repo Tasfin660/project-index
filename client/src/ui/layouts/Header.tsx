@@ -16,7 +16,7 @@ const Header = () => {
 
 	return (
 		<header className="flex flex-col items-center text-center">
-			<h2 className="text-clr-primary font-heading text-sm font-medium uppercase">
+			<h2 className="font-heading text-sm font-medium uppercase text-clr-primary">
 				Find Inspiring Projects
 			</h2>
 			<h1 className="-mt-2 font-heading text-[50px] font-bold">
@@ -34,9 +34,9 @@ const Header = () => {
 				<FaSass className={`${iClass} hover:bg-pink-500`} />
 				<RiTailwindCssFill className={`${iClass} hover:bg-cyan-500`} />
 				<FaJs className={`${iClass} hover:bg-yellow-500`} />
-				<FaReact className={`${iClass} hover:bg-clr-primary-tints`} />
+				<FaReact className={`${iClass} hover:bg-clr-primary`} />
 				<FaVuejs className={`${iClass} hover:bg-emerald-500`} />
-				<FaAngular className={`${iClass} hover:bg-red-600`} />
+				<FaAngular className={`${iClass} hover:bg-rose-700`} />
 				<RiSvelteFill className={`${iClass} hover:bg-orange-600`} />
 				<RiNextjsFill
 					className={`${iClass} hover:bg-clr-white hover:text-clr-gray-dark`}

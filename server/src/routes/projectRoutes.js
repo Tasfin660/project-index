@@ -20,9 +20,9 @@ router.get('/:category/:_id', getProject)
 router.use(protect)
 
 router.post('/', createProject)
-router.put('/update-developers', updateDevelopers)
-router.put('/update-stars', updateStars)
-router.put('/update-status', updateStatus)
+router.put('/developers', updateDevelopers)
+router.put('/stars', updateStars)
+router.put('/status', updateStatus)
 router.delete('/:projectId', deleteProject)
 
 export default router

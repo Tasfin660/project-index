@@ -44,7 +44,7 @@ const Users = () => {
 		return (
 			<WebError
 				code="500"
-				msg="An error occurred while retrieving user data. Please try again later."
+				msg="An error occurred while retrieving users data. Please try again later."
 				btn="reload"
 			/>
 		)

@@ -20,7 +20,7 @@ const createProject = async (projectData: Project, token: string) => {
 }
 
 const updateDevelopers = async (projectId: string, token: string) => {
-	await fetch(`${import.meta.env.VITE_API}/projects/update-developers`, {
+	await fetch(`${import.meta.env.VITE_API}/projects/developers`, {
 		method: 'PUT',
 		headers: {
 			'Content-Type': 'application/json',
@@ -33,7 +33,7 @@ const updateDevelopers = async (projectId: string, token: string) => {
 }
 
 const updateStars = async (projectId: string, token: string) => {
-	await fetch(`${import.meta.env.VITE_API}/projects/update-stars`, {
+	await fetch(`${import.meta.env.VITE_API}/projects/stars`, {
 		method: 'PUT',
 		headers: {
 			'Content-Type': 'application/json',
@@ -59,7 +59,7 @@ const updateStatus = async (
 	value: string,
 	token: string
 ) => {
-	await fetch(`${import.meta.env.VITE_API}/projects/update-status`, {
+	await fetch(`${import.meta.env.VITE_API}/projects/status`, {
 		method: 'PUT',
 		headers: {
 			'Content-Type': 'application/json',

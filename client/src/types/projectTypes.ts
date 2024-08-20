@@ -1,5 +1,5 @@
 interface Project {
-	_id: string
+	_id?: string
 	title: string
 	category: string
 	description: string

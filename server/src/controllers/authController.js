@@ -25,6 +25,7 @@ const register = async (req, res) => {
 		const newUser = new UserModel({
 			...req.body,
 			role: 'User',
+			admin_status: 'idle',
 			password: hashedPassword
 		})
 		await newUser.save()

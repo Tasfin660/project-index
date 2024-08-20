@@ -59,7 +59,6 @@ const ProjectInfo = ({ project }: { project: Project }) => {
 		setLoading(true)
 		await deleteProject(projectId, cookies.jwt)
 		setLoading(false)
-
 		navigate(`/projects/${pathname.split('/')[2]}/all`, { replace: true })
 	}
 
@@ -125,7 +124,7 @@ const ProjectInfo = ({ project }: { project: Project }) => {
 						<div className="mr-auto"></div>
 					)}
 					<button
-						className={`mx-2 rounded px-2 py-0.5 font-medium duration-300 disabled:cursor-not-allowed ${isstars ? 'bg-clr-yellow text-clr-gray-dark active:opacity-80 disabled:active:opacity-100' : 'bg-yellow-500/20 text-clr-yellow active:bg-clr-yellow active:text-clr-gray-dark'} ${loading && 'disabled:cursor-wait disabled:bg-clr-yellow disabled:text-clr-gray-dark disabled:opacity-80'}`}
+						className={`mx-2 rounded px-2 py-0.5 font-medium duration-300 disabled:cursor-not-allowed ${isstars ? 'bg-clr-yellow text-clr-gray-dark active:opacity-80 disabled:active:opacity-100' : 'bg-yellow-500/20 text-clr-yellow active:bg-clr-yellow active:text-clr-gray-dark'} ${loading && 'disabled:cursor-wait disabled:opacity-80'}`}
 						onClick={handleStar}
 						disabled={owner?._id === user?._id || loading}>
 						{isstars ? 'Starred' : 'Star'}
@@ -135,7 +134,7 @@ const ProjectInfo = ({ project }: { project: Project }) => {
 							isEnrolled
 								? 'bg-clr-primary disabled:active:bg-clr-primary'
 								: 'bg-sky-500/10 text-clr-primary active:text-clr-white disabled:active:bg-sky-500/10 disabled:active:text-clr-primary'
-						} ${loading && 'disabled:cursor-wait disabled:bg-clr-primary-shades disabled:text-clr-white'}`}
+						} ${loading && 'disabled:cursor-wait disabled:opacity-80'}`}
 						onClick={handleJoin}
 						disabled={!btnDisable || loading}>
 						{isEnrolled ? 'Leave Project' : 'Join As Developer'}
