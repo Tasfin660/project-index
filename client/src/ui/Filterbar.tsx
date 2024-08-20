@@ -1,24 +1,38 @@
-const Filterbar = ({ type }: { type?: string }) => {
+import { formatLength } from '../utils/helpers'
+
+interface Filterbar {
+	type?: string
+	res: number
+	onFilter: (value: string) => void
+}
+
+const Filterbar = ({ type, res, onFilter }: Filterbar) => {
 	return (
-		<div className="mb-8 flex items-center gap-4 rounded-md bg-clr-gray-light p-3">
+		<div className="mb-8 flex items-center gap-4 rounded-md bg-clr-gray-neutral p-3">
 			<span>Filter By:</span>
-			{type === 'users' ? (
-				<select className="w-max rounded-full bg-clr-gray-dark px-2 py-1 text-sm">
-					<option value="all">All Developers</option>
-					<option value="react">React</option>
-					<option value="vuejs">Vuejs</option>
-					<option value="angular">Angular</option>
-					<option value="svelte">Svelte</option>
-				</select>
-			) : (
-				<select className="w-max rounded-full bg-clr-gray-dark px-2.5 py-1 text-sm">
-					<option value="all">All Projects</option>
-					<option value="completed">Completed</option>
-					<option value="ongoing">Ongoing</option>
-					<option value="postponed">Postponed</option>
-				</select>
-			)}
-			<span className="ml-auto">Results: 08</span>
+			<select
+				className="w-max rounded-full bg-clr-gray-light px-2 py-1 text-sm"
+				onChange={e => onFilter(e.target.value)}>
+				{type === 'users' ? (
+					<>
+						<option value="all">All Developers</option>
+						<option value="react">React</option>
+						<option value="vuejs">Vuejs</option>
+						<option value="angular">Angular</option>
+						<option value="svelte">Svelte</option>
+					</>
+				) : (
+					<>
+						<option value="all">All Projects</option>
+						<option value="Completed">Completed</option>
+						<option value="Ongoing">Ongoing</option>
+						<option value="Postponed">Postponed</option>
+					</>
+				)}
+			</select>
+			<p className="ml-auto rounded-md bg-clr-gray-grad px-2.5 py-1.5 text-xs font-semibold text-clr-primary">
+				Results: {formatLength(res)}
+			</p>
 		</div>
 	)
 }

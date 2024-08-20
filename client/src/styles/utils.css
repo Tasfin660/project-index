@@ -35,7 +35,7 @@
 
 /* Auth form background image */
 .auth-form {
-	background-image: url('../../public/auth-bg.jpg');
+	background-image: url('/auth-bg.jpg');
 	background-size: cover;
 	background-position: center center;
 }

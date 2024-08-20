@@ -37,3 +37,58 @@
 			14px 6px;
 	}
 }
+
+/* React hot toast loading loader */
+.loader--toast-loading {
+	width: 40px;
+	height: 40px;
+	border: 5px solid var(--color-white);
+	border-bottom-color: var(--color-primary);
+	border-radius: 50%;
+	display: inline-block;
+	box-sizing: border-box;
+	animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+	0% {
+		transform: scale(0.4) rotate(0deg);
+	}
+	100% {
+		transform: scale(0.4) rotate(360deg);
+	}
+}
+
+/* Website loader */
+.loader--web {
+	width: 72px;
+	height: 72px;
+	border-radius: 50%;
+	background:
+		radial-gradient(farthest-side, #0284c7 94%, #0000) top/11.5px 11.5px
+			no-repeat,
+		conic-gradient(#0000 30%, #0284c7);
+	mask: radial-gradient(farthest-side, #0000 calc(100% - 11.5px), #000 0);
+	animation: spinner-c7wet2 0.8s infinite linear;
+}
+
+@keyframes spinner-c7wet2 {
+	100% {
+		transform: rotate(1turn);
+	}
+}
+
+/* Smooth rendering */
+.smooth-rendering {
+	animation: smooth-rendering 0.5s ease-in;
+}
+
+@keyframes smooth-rendering {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}

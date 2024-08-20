@@ -2,42 +2,49 @@ import { FaLongArrowAltRight } from 'react-icons/fa'
 import { HiUser } from 'react-icons/hi2'
 import { TiStarFullOutline } from 'react-icons/ti'
 import { Link } from 'react-router-dom'
+import { useAppSelector } from '../../hooks/hooks'
+import { Project } from '../../types/projectTypes'
+import { getUser } from '../user/userSlice'
 
-const ProjectOverview = () => {
+const ProjectOverview = ({ project, i }: { project: Project; i: number }) => {
+	const user = useAppSelector(getUser)
+	const { _id, title, category, description, status, starred, developers } =
+		project || {}
+
+	const isEnrolled = developers?.includes(user?._id as string)
+
 	return (
-		<div className="bg-clr-secondary-grad hover:border-clr-white relative w-[330px] shrink-0 rounded-lg border border-transparent p-4 duration-300">
-			<h2 className="line-clamp-1 break-all pr-10 font-heading text-2xl font-medium">
-				Dinasourious Vault
+		<div className="relative w-[330px] shrink-0 rounded-lg border border-transparent bg-clr-secondary-grad p-4 duration-300 hover:border-clr-white">
+			<h2 className="-mt-1.5 line-clamp-1 break-all pr-8 font-heading text-2xl font-medium">
+				{title}
 			</h2>
 			<div className="mt-2 space-x-2 text-xs">
-				<span className="bg-clr-green-grad rounded-full px-2 py-0.5">
-					Completed
+				<span
+					className={`rounded-full bg-clr-${status === 'Completed' ? 'green' : status === 'Ongoing' ? 'yellow' : 'red'}-grad px-2 py-0.5`}>
+					{status}
 				</span>
-				<span className="bg-clr-white text-clr-gray-dark rounded-full px-2 py-0.5 font-semibold">
-					Enrolled
-				</span>
+				{isEnrolled && (
+					<span className="rounded-full bg-clr-white px-2 py-0.5 font-semibold text-clr-gray-dark">
+						Enrolled
+					</span>
+				)}
 			</div>
-			<p className="my-4 line-clamp-3 break-all text-xs">
-				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae,
-				fugiat suscipit, corporis maxime iste officiis labore amet iure aut
-				numquam quasi dignissimos vel omnis nihil modi pariatur possimus illo
-				debitis?
-			</p>
+			<p className="my-4 line-clamp-3 text-xs">{description}</p>
 			<div className="flex gap-3">
 				<div className="flex items-center gap-1.5 rounded-full bg-slate-50/10 px-2.5 py-0.5 text-sm">
-					<TiStarFullOutline /> 20
+					<TiStarFullOutline /> {starred?.length}
 				</div>
 				<div className="flex w-max items-center gap-1.5 rounded-full bg-slate-50/10 px-2.5 py-0.5 text-sm">
-					<HiUser /> 6
+					<HiUser /> {developers?.length}
 				</div>
 				<Link
-					to={`/projects/javascript/45?details=overview`}
+					to={`/projects/${category}/${_id}?details=overview`}
 					className="ml-auto flex items-center gap-1.5 rounded-full bg-slate-50/10 px-2.5 py-0.5 text-sm duration-300 hover:bg-slate-50/20">
 					Check <FaLongArrowAltRight />
 				</Link>
 			</div>
-			<span className="serial-clip bg-clr-white text-clr-gray-dark absolute right-6 top-0 px-2 pb-1.5 pt-[2px] font-medium">
-				01
+			<span className="serialclip absolute right-0 top-0 flex h-8 w-8 items-center justify-center rounded-bl-2xl bg-clr-white pb-1 font-medium text-clr-gray-dark">
+				{i + 1}
 			</span>
 		</div>
 	)

@@ -1,6 +1,15 @@
-import { Form } from 'react-router-dom'
+import { useEffect } from 'react'
+import { useCookies } from 'react-cookie'
+import { Form, useNavigate } from 'react-router-dom'
 
 const UserSettings = () => {
+	const navigate = useNavigate()
+	const [cookies] = useCookies(['jwt'])
+
+	useEffect(() => {
+		if (!cookies.jwt) navigate('/unauthorized', { replace: true })
+	}, [cookies.jwt, navigate])
+
 	return (
 		<Form className="container my-16 w-[600px] space-y-12 text-sm">
 			<div className="relative space-y-6 rounded-lg border border-clr-primary p-6">

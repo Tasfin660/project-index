@@ -2,14 +2,32 @@ import { useLocation } from 'react-router-dom'
 import ProjectQuery from './ProjectQuery'
 import { IoCopy } from 'react-icons/io5'
 import { FaDownload, FaShare } from 'react-icons/fa'
+import { useSelector } from 'react-redux'
+import { getUser } from '../user/userSlice'
+import toast, { Toaster } from 'react-hot-toast'
+import { ToastCopy, toastReset } from '../../ui/ToastElements'
 
-const ProjectDetails = () => {
-	const { search } = useLocation()
-	const query = search.split('=')[1]
+interface ProjectDetails {
+	title: string
+	status: string
+	developers: string[]
+}
+
+const ProjectDetails = ({ title, status, developers }: ProjectDetails) => {
+	const location = useLocation()
+	const query = location.search.split('=')[1]
+	const user = useSelector(getUser)
+
+	const isEnrolled = developers?.includes(user?._id as string)
+
+	const handleCopy = () => {
+		navigator.clipboard.writeText(`https://www.vercel.app${location.pathname}`)
+		toast(<ToastCopy msg="Link copied to clipboard!" />, toastReset)
+	}
 
 	return (
 		<section>
-			<div className="mx-auto mb-12 w-max space-x-8">
+			<div className="project-nav mx-auto mb-12 w-max space-x-8">
 				<ProjectQuery to="overview" />
 				<ProjectQuery to="features" />
 				<ProjectQuery to="component" />
@@ -18,24 +36,30 @@ const ProjectDetails = () => {
 				<ProjectQuery to="pages" />
 				<ProjectQuery to="enhancements" />
 			</div>
-			<p className="blue-bg p-4 leading-7">
+			<div className="blue-bg p-4 leading-7">
 				<div className="mb-3 flex items-center gap-2 border-b-2 border-blue-600/20 pb-3 text-xs">
-					<span className="mr-1 font-heading text-lg font-medium">
-						Recipe Vault
+					<span className="mr-1 font-heading text-lg font-medium">{title}</span>
+					<span
+						className={`rounded-sm px-1.5 py-0.5 bg-clr-${status === 'Completed' ? 'green' : status === 'Ongoing' ? 'yellow' : 'red'}-grad px-2 py-0.5`}>
+						{status}
 					</span>
-					<span className="bg-clr-green-grad rounded-sm px-1.5 py-0.5">
-						Completed
-					</span>
-					<span className="bg-clr-white text-clr-gray-dark rounded-sm px-1.5 py-0.5 font-semibold">
-						Enrolled
-					</span>
-					<button className="bg-clr-secondary-grad text-clr-primary hover:text-clr-primary-shades ml-auto box-content rounded-md p-2 duration-300">
+					{isEnrolled && (
+						<span className="rounded-sm bg-clr-white px-1.5 py-0.5 font-semibold text-clr-gray-dark">
+							Enrolled
+						</span>
+					)}
+					<button className="ml-auto box-content rounded-md bg-clr-secondary-grad p-2 text-clr-primary duration-300 hover:text-clr-primary-shades">
 						<IoCopy />
 					</button>
-					<button className="bg-clr-secondary-grad text-clr-primary hover:text-clr-primary-shades mx-1.5 box-content rounded-md p-2 duration-300">
+					<a
+						href="/project-details.txt"
+						download="project-details"
+						className="mx-1.5 box-content rounded-md bg-clr-secondary-grad p-2 text-clr-primary duration-300 hover:text-clr-primary-shades">
 						<FaDownload />
-					</button>
-					<button className="bg-clr-secondary-grad text-clr-primary hover:text-clr-primary-shades box-content rounded-md p-2 duration-300">
+					</a>
+					<button
+						className="box-content rounded-md bg-clr-secondary-grad p-2 text-clr-primary duration-300 hover:text-clr-primary-shades"
+						onClick={handleCopy}>
 						<FaShare />
 					</button>
 				</div>
@@ -208,7 +232,8 @@ const ProjectDetails = () => {
 						</li>
 					</ul>
 				)}
-			</p>
+			</div>
+			<Toaster />
 		</section>
 	)
 }

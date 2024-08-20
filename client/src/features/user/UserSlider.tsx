@@ -5,17 +5,17 @@ import ProjectOverview from '../project/ProjectOverview'
 import { FaRepeat } from 'react-icons/fa6'
 
 const UserSlider = ({ type }) => {
-	const scrollRef = useRef(null)
+	const sliderRef = useRef(null)
 
 	const handleScrollLeft = () => {
-		scrollRef.current.scrollBy({
+		sliderRef.current.scrollBy({
 			left: -370,
 			behavior: 'smooth'
 		})
 	}
 
 	const handleScrollRight = () => {
-		scrollRef.current.scrollBy({
+		sliderRef.current.scrollBy({
 			left: 370,
 			behavior: 'smooth'
 		})
@@ -37,7 +37,7 @@ const UserSlider = ({ type }) => {
 			</div>
 			<div
 				className="user-project-scroll flex gap-10 overflow-x-scroll py-6"
-				ref={scrollRef}>
+				ref={sliderRef}>
 				{type === 'completed' && (
 					<div className="sticky left-0 z-10 flex w-[200px] shrink-0 flex-col items-center justify-center gap-2 rounded-lg bg-clr-green-grad">
 						<FaCheck className="box-content rounded-full bg-emerald-200/20 p-2.5 text-lg" />

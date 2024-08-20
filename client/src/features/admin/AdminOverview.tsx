@@ -1,7 +1,7 @@
 import { FaCalendarAlt } from 'react-icons/fa'
 import { HiClock } from 'react-icons/hi'
 import { Link } from 'react-router-dom'
-import { acceptedAt, requestedAt } from '../../utils/helpers'
+import { formatDate, requestedAt } from '../../utils/helpers'
 
 interface User {
 	_id: string
@@ -27,25 +27,25 @@ const AdminOverview = ({ user, type }: { user: User; type?: string }) => {
 						</>
 					) : (
 						<>
-							<FaCalendarAlt className="text-clr-primary mr-0.5 -translate-y-[1px] text-xs" />
-							{acceptedAt(accepted_at)}
+							<FaCalendarAlt className="mr-0.5 -translate-y-[1px] text-xs text-clr-primary" />
+							{formatDate(accepted_at)}
 						</>
 					)}
 				</p>
 			</div>
 			{type === 'pending' ? (
 				<div className="ml-auto space-x-4">
-					<button className="bg-clr-secondary-grad text-clr-green rounded-full px-3 py-1.5 font-semibold">
+					<button className="rounded-full bg-clr-secondary-grad px-3 py-1.5 font-semibold text-clr-green">
 						Accept
 					</button>
-					<button className="bg-clr-secondary-grad text-clr-red rounded-full px-3 py-1.5 font-semibold">
+					<button className="rounded-full bg-clr-secondary-grad px-3 py-1.5 font-semibold text-clr-red">
 						Reject
 					</button>
 				</div>
 			) : (
 				<Link
 					to={`/users/${userId}`}
-					className="bg-clr-secondary-grad text-clr-primary ml-auto rounded-full px-3 py-1.5 font-semibold">
+					className="ml-auto rounded-full bg-clr-secondary-grad px-3 py-1.5 font-semibold text-clr-primary">
 					Check
 				</Link>
 			)}
