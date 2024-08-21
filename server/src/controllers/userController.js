@@ -22,7 +22,6 @@ const getUsers = async (req, res) => {
 const getUser = async (req, res) => {
 	try {
 		const user = await UserModel.findOne(req.params, {
-			_id: 0,
 			password: 0,
 			__v: 0
 		})
@@ -54,17 +53,24 @@ const getUser = async (req, res) => {
 
 const updateAdminStatus = async (req, res) => {
 	try {
+		const { status, userId } = req.body
 		const user = await UserModel.findById({
-			_id: req.userId
+			_id: userId
 		})
-		user.admin_status = req.body.status
+		if (status === 'pending') user.requested_at = new Date()
+		if (status === 'accepted') {
+			user.accepted_at = new Date()
+			user.role = 'Admin'
+		}
+		user.admin_status = status
+
 		await user.save()
-		console.log(req.userId)
 		res.status(200).json({
 			status: 'success',
-			message: `User admin status updated to ${req.body.status}`
+			message: `User admin status updated to ${status}`
 		})
 	} catch (err) {
+		console.log(err.message)
 		return res
 			.status(500)
 			.json({ message: 'Internal server error.', err: err.message })

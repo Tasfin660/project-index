@@ -48,8 +48,15 @@ const userSlice = createSlice({
 		setUser(state, action) {
 			state.user = action.payload
 		},
-		setAdminStatus(state, action) {
+		setAdminReq(state, action) {
 			if (state.guestUser) state.guestUser.admin_status = action.payload
+		},
+		setAdminStatus(state, action) {
+			state.users = state.users.map(user =>
+				user._id === action.payload.userId
+					? { ...user, admin_status: `pending--${action.payload.status}` }
+					: user
+			)
 		}
 	},
 	extraReducers: builder => {
@@ -80,7 +87,7 @@ const userSlice = createSlice({
 	}
 })
 
-export const { setUser, setAdminStatus } = userSlice.actions
+export const { setUser, setAdminReq, setAdminStatus } = userSlice.actions
 
 export default userSlice.reducer
 

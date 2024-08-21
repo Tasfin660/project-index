@@ -1,4 +1,8 @@
-const updateAdminStatus = async (status: string, token: string) => {
+const updateAdminStatus = async (
+	status: string,
+	userId: string,
+	token: string
+) => {
 	await fetch(`${import.meta.env.VITE_API}/users/admin-status`, {
 		method: 'PUT',
 		headers: {
@@ -6,7 +10,8 @@ const updateAdminStatus = async (status: string, token: string) => {
 			'Authorization': `Bearer ${token}`
 		},
 		body: JSON.stringify({
-			status
+			status,
+			userId
 		})
 	})
 }

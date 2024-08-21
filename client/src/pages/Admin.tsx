@@ -45,8 +45,8 @@ const Admin = () => {
 						</div>
 						{users.map(
 							user =>
-								user.admin_status === 'pending' && (
-									<AdminOverview key={user._id} user={user} status="pending" />
+								user.admin_status?.includes('pending') && (
+									<AdminOverview key={user._id} user={user} />
 								)
 						)}
 					</div>

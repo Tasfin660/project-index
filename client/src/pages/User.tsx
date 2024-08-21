@@ -4,7 +4,7 @@ import { FaAngular, FaCrown, FaReact, FaShare, FaVuejs } from 'react-icons/fa'
 import { PiGithubLogoFill } from 'react-icons/pi'
 import { RiSvelteFill, RiVerifiedBadgeFill } from 'react-icons/ri'
 import { useLocation } from 'react-router-dom'
-import { fetchUser, setAdminStatus } from '../features/user/userSlice'
+import { fetchUser, setAdminReq } from '../features/user/userSlice'
 import UserSlider from '../features/user/UserSlider'
 import { useAppDispatch, useAppSelector } from '../hooks/hooks'
 import Image from '../ui/Image'
@@ -21,6 +21,7 @@ const User = () => {
 	const dispatch = useAppDispatch()
 	const url = pathname.split('/')[2]
 	const {
+		_id: userId,
 		fullname,
 		username,
 		avatar,
@@ -37,9 +38,9 @@ const User = () => {
 
 	const handleReq = async () => {
 		setLoading(true)
-		await updateAdminStatus('pending', cookies.jwt)
+		await updateAdminStatus('pending', userId as string, cookies.jwt)
 		setLoading(false)
-		dispatch(setAdminStatus('pending'))
+		dispatch(setAdminReq('pending'))
 	}
 
 	const handleCopy = () => {
