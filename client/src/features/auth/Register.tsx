@@ -17,14 +17,16 @@ import {
 const schema = yup.object().shape({
 	username: yup
 		.string()
+		.trim()
 		.min(3)
 		.max(24)
 		.matches(/^\S*$/, 'Username should not contain spaces')
 		.required(),
-	email: yup.string().email().required(),
-	avatar: yup.string().url().required(),
+	email: yup.string().trim().email().required(),
+	avatar: yup.string().trim().url().required(),
 	password: yup
 		.string()
+		.trim()
 		.min(8)
 		.max(32)
 		.matches(/\d/, 'Password must contain number')

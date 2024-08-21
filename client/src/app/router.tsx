@@ -8,7 +8,7 @@ import Projects from '../pages/Projects'
 import Stats from '../pages/Stats'
 import User from '../pages/User'
 import Users from '../pages/Users'
-import UserSettings from '../pages/UserSettings'
+import Settings from '../pages/Settings'
 import MainLayout from '../ui/layouts/MainLayout'
 import Unauthorized from '../pages/Unauthorized'
 import NotFound from '../pages/NotFound'
@@ -45,7 +45,7 @@ const router = createBrowserRouter([
 			},
 			{
 				path: 'settings',
-				element: <UserSettings />
+				element: <Settings />
 			},
 			{
 				path: '/stats',

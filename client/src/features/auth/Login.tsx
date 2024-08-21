@@ -17,12 +17,8 @@ import {
 import { setUser } from '../user/userSlice'
 
 const schema = yup.object().shape({
-	email: yup.string().email().required(),
-	password: yup
-		.string()
-		.min(8)
-		.matches(/\d/, 'Password must contain number')
-		.required()
+	email: yup.string().trim().email().required(),
+	password: yup.string().trim().min(8).required()
 })
 
 const Login = () => {

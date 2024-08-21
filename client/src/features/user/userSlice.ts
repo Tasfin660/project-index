@@ -57,6 +57,10 @@ const userSlice = createSlice({
 					? { ...user, admin_status: `pending--${action.payload.status}` }
 					: user
 			)
+		},
+		setUserInfo(state, action) {
+			state.user = { ...state.user, ...action.payload }
+			localStorage.setItem('user', JSON.stringify(state.user))
 		}
 	},
 	extraReducers: builder => {
@@ -87,7 +91,8 @@ const userSlice = createSlice({
 	}
 })
 
-export const { setUser, setAdminReq, setAdminStatus } = userSlice.actions
+export const { setUser, setAdminReq, setAdminStatus, setUserInfo } =
+	userSlice.actions
 
 export default userSlice.reducer
 

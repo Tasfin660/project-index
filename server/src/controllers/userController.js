@@ -1,5 +1,6 @@
 import UserModel from '../models//userModel.js'
 import ProjectModel from '../models/projectModel.js'
+import bcrypt from 'bcrypt'
 
 const getUsers = async (req, res) => {
 	try {
@@ -70,11 +71,57 @@ const updateAdminStatus = async (req, res) => {
 			message: `User admin status updated to ${status}`
 		})
 	} catch (err) {
-		console.log(err.message)
 		return res
 			.status(500)
 			.json({ message: 'Internal server error.', err: err.message })
 	}
 }
 
-export { getUser, getUsers, updateAdminStatus }
+const updateInfo = async (req, res) => {
+	try {
+		let user = await UserModel.findById({ _id: req.userId })
+		user = { ...user._doc, ...req.body }
+		await UserModel.updateOne({ _id: req.userId }, user)
+		return res
+			.status(200)
+			.json({ status: 'success', message: 'User info updated successfully.' })
+	} catch (err) {
+		return res.status(500).json({
+			status: 'fail',
+			message: 'Internal server error.',
+			err: err.message
+		})
+	}
+}
+
+const updatePassword = async (req, res) => {
+	try {
+		const { oldPassword, newPassword } = req.body.data
+		const user = await UserModel.findById({ _id: req.userId })
+
+		const isPassValid = await bcrypt.compare(oldPassword, user.password)
+		if (!isPassValid) throw new Error('400')
+
+		const newHashedPassword = await bcrypt.hash(newPassword, 10)
+		user.password = newHashedPassword
+		await user.save()
+		res.status(200).json({
+			status: 'success',
+			message: "User's passowrd updated successfully."
+		})
+	} catch (err) {
+		console.log(err)
+		if (err.message.includes('400'))
+			return res
+				.status(400)
+				.json({ status: 'fail', message: 'Invalid old password.' })
+		return res.status(500).json({
+			status: 'fail',
+			message: 'Internal server error.',
+			err: err.message
+		})
+	}
+}
+
+export { getUser, getUsers, updateAdminStatus, updateInfo, updatePassword }
+// $2b$10$584QwaRlgyhkSzcAsIi8FOmb3HthjPcRXz1eQ9jqyjfdc2BgQjV56

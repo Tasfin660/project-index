@@ -23,4 +23,16 @@ interface UserState {
 	error: string
 }
 
-export type { User, UserState }
+interface UpdateInfo {
+	fullname?: string | null
+	avatar?: string
+	framework?: string
+	github?: string
+}
+
+interface UpdatePassword {
+	oldPassword: string
+	newPassword: string
+}
+
+export type { UpdateInfo, UpdatePassword, User, UserState }
