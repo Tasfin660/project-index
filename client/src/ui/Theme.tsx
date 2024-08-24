@@ -3,10 +3,11 @@ import { HiMiniComputerDesktop } from 'react-icons/hi2'
 import { IoMdMoon } from 'react-icons/io'
 import { MdOutlineLightMode } from 'react-icons/md'
 
-function Theme() {
+const Theme = () => {
 	const [theme, setTheme] = useState(globalThis.getTheme())
-	function changeTheme() {
+	const changeTheme = () => {
 		const th = theme === 'light' ? 'auto' : theme === 'auto' ? 'dark' : 'light'
+
 		globalThis.setTheme(th)
 		setTheme(() => th)
 	}
