@@ -15,7 +15,7 @@ const UserOverview = ({ user }: { user: User }) => {
 					alt={username}
 					className="size-[80px] rounded-full object-cover shadow-lg"
 				/>
-				<p className="font-medium">{fullname || '_'}</p>
+				<p className="font-medium text-clr-white">{fullname || '_'}</p>
 			</div>
 			<div className="flex w-max flex-col items-center justify-center gap-4 justify-self-center rounded-md bg-slate-50/20 px-[14px] shadow-lg">
 				<a

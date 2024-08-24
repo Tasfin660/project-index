@@ -95,7 +95,7 @@ const UpdateInfo = () => {
 						type="text"
 						id="username"
 						placeholder="Tasfin660"
-						className="border-b border-sky-500/20 pb-0.5 focus:border-clr-primary disabled:text-slate-200/70"
+						className="border-b border-sky-500/20 pb-0.5 focus:border-clr-primary disabled:text-slate-400 disabled:dark:text-slate-200/70"
 						defaultValue={username}
 						disabled
 					/>
@@ -107,7 +107,7 @@ const UpdateInfo = () => {
 					<input
 						id="email"
 						type="text"
-						className="border-b border-sky-500/20 pb-0.5 focus:border-clr-primary disabled:text-slate-200/70"
+						className="border-b border-sky-500/20 pb-0.5 focus:border-clr-primary disabled:text-slate-400 disabled:dark:text-slate-200/70"
 						defaultValue={email}
 						disabled
 					/>
@@ -130,7 +130,7 @@ const UpdateInfo = () => {
 					</label>
 					<select
 						id="framework"
-						className="border-b border-sky-500/20 bg-clr-secondary pb-0.5"
+						className="border-b border-sky-500/20 bg-slate-300 pb-0.5 dark:bg-clr-secondary"
 						{...reg('framework')}
 						defaultValue={framework}>
 						<option value="React">React</option>
@@ -152,14 +152,14 @@ const UpdateInfo = () => {
 						defaultValue={github}
 					/>
 				</div>
-				<p className="absolute -top-9 left-1/2 -translate-x-1/2 bg-clr-secondary px-2 text-clr-primary">
+				<p className="absolute -top-9 left-1/2 -translate-x-1/2 bg-clr-white px-2 text-clr-primary dark:bg-clr-secondary">
 					User Information
 				</p>
 			</div>
 			<div className="flex items-center justify-center">
 				<button
 					type="button"
-					className="rounded-l-full bg-clr-white px-2.5 py-1.5 text-sm font-medium text-clr-gray-dark duration-300 active:bg-slate-300"
+					className="rounded-l-full bg-slate-100 px-2.5 py-1.5 text-sm font-medium text-clr-gray-dark duration-300 active:bg-slate-300 dark:bg-clr-white"
 					onClick={() => reset()}>
 					Reset
 				</button>

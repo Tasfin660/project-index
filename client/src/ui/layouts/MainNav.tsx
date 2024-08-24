@@ -27,7 +27,7 @@ const MainNav = () => {
 	}
 
 	return (
-		<nav className="sticky top-0 z-[9999] border-b border-blue-600/20 bg-slate-950/80 backdrop-blur">
+		<nav className="sticky top-0 z-[9999] border-b border-blue-600/20 bg-slate-100 backdrop-blur dark:bg-slate-950/80">
 			<div className="container grid h-[var(--nav-height)] grid-cols-5 items-center justify-between">
 				<div className="flex w-max flex-col items-center gap-1 font-heading text-sm">
 					<img src="/logo.png" alt="logo" className="w-6" />
@@ -35,7 +35,7 @@ const MainNav = () => {
 				</div>
 				{cookies.jwt ? (
 					<button
-						className="box-content w-max rounded-full border-2 border-clr-primary p-2 text-xl duration-300 hover:bg-clr-primary"
+						className="box-content w-max rounded-full border-2 border-clr-primary p-2 text-xl text-clr-gray-light duration-300 hover:bg-clr-primary hover:text-clr-white dark:text-clr-white"
 						onClick={logout}>
 						<BiSolidLogInCircle />
 					</button>

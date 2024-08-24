@@ -18,7 +18,7 @@ const ProjectBox = ({ status, isLoading, count, total }: ProjectBox) => {
 
 	return (
 		<div
-			className={`flex flex-col justify-between rounded-xl p-4 ${colors[status]}`}>
+			className={`flex flex-col justify-between rounded-xl p-4 text-clr-white ${colors[status]}`}>
 			<p className="text-lg">
 				{status}: {isLoading ? '...' : count}
 			</p>

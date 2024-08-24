@@ -8,10 +8,10 @@ interface Filterbar {
 
 const Filterbar = ({ type, res, onFilter }: Filterbar) => {
 	return (
-		<div className="mb-8 flex items-center gap-4 rounded-md bg-clr-gray-neutral p-3">
+		<div className="mb-8 flex items-center gap-4 rounded-md bg-slate-200 p-3 dark:bg-clr-gray-neutral">
 			<span>Filter By:</span>
 			<select
-				className="w-max rounded-full bg-clr-gray-light px-2 py-1 text-sm"
+				className="w-max rounded-full bg-slate-300 px-2 py-1 text-sm dark:bg-clr-gray-light"
 				onChange={e => onFilter(e.target.value)}>
 				{type === 'users' ? (
 					<>
@@ -30,7 +30,7 @@ const Filterbar = ({ type, res, onFilter }: Filterbar) => {
 					</>
 				)}
 			</select>
-			<p className="ml-auto rounded-md bg-clr-gray-grad px-2.5 py-1.5 text-xs font-semibold text-clr-primary">
+			<p className="ml-auto rounded-md bg-slate-300 px-2.5 py-1.5 text-xs font-semibold text-clr-primary duration-300 dark:bg-clr-gray-grad">
 				Results: {formatLength(res)}
 			</p>
 		</div>

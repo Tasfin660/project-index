@@ -41,16 +41,29 @@
 }
 
 /* User projects scrollbar */
-.user-project-scroll::after {
-	content: '';
-	position: absolute;
-	top: 65px;
-	left: 248px;
-	height: 210px;
-	width: 40px;
-	background-color: var(--color-secondary);
-}
 
+:root[theme='light'] {
+	.user-project-scroll::after {
+		content: '';
+		position: absolute;
+		top: 65px;
+		left: 248px;
+		height: 210px;
+		width: 40px;
+		background-color: var(--color-white);
+	}
+}
+:root[theme='dark'] {
+	.user-project-scroll::after {
+		content: '';
+		position: absolute;
+		top: 65px;
+		left: 248px;
+		height: 210px;
+		width: 40px;
+		background-color: var(--color-secondary);
+	}
+}
 /* Stat page owner img gradient */
 .stat-img::before {
 	content: '';

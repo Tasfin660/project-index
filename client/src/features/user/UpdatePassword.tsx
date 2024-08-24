@@ -97,8 +97,8 @@ const UpdatePassword = () => {
 						{...reg('newPassword')}
 					/>
 				</div>
-				<p className="absolute -top-9 left-1/2 -translate-x-1/2 bg-clr-secondary px-2 text-clr-primary">
-					Account Information
+				<p className="absolute -top-9 left-1/2 -translate-x-1/2 bg-clr-white px-2 text-clr-primary dark:bg-clr-secondary">
+					Update Password
 				</p>
 			</div>
 			<button className="rounded-full bg-clr-primary px-2.5 py-1.5 text-sm text-clr-white duration-300 active:bg-clr-primary-shades">

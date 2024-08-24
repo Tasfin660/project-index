@@ -40,25 +40,25 @@ const ProjectDetails = ({ title, status, developers }: ProjectDetails) => {
 				<div className="mb-3 flex items-center gap-2 border-b-2 border-blue-600/20 pb-3 text-xs">
 					<span className="mr-1 font-heading text-lg font-medium">{title}</span>
 					<span
-						className={`rounded-sm px-1.5 py-0.5 bg-clr-${status === 'Completed' ? 'green' : status === 'Ongoing' ? 'yellow' : 'red'}-grad px-2 py-0.5`}>
+						className={`rounded-sm px-1.5 py-0.5 text-clr-white bg-clr-${status === 'Completed' ? 'green' : status === 'Ongoing' ? 'yellow' : 'red'}-grad px-2 py-0.5`}>
 						{status}
 					</span>
 					{isEnrolled && (
-						<span className="smooth-rendering rounded-sm bg-clr-white px-1.5 py-0.5 font-semibold text-clr-gray-dark">
+						<span className="smooth-rendering rounded-sm bg-slate-200 px-1.5 py-0.5 font-semibold text-clr-gray-dark dark:bg-clr-white">
 							Enrolled
 						</span>
 					)}
-					<button className="ml-auto box-content rounded-md bg-clr-secondary-grad p-2 text-clr-primary duration-300 hover:text-clr-primary-shades">
+					<button className="ml-auto box-content rounded-md bg-slate-200 p-2 text-clr-primary duration-300 hover:text-clr-primary-shades dark:bg-transparent dark:bg-clr-secondary-grad">
 						<IoCopy />
 					</button>
 					<a
 						href="/project-details.txt"
 						download="project-details"
-						className="mx-1.5 box-content rounded-md bg-clr-secondary-grad p-2 text-clr-primary duration-300 hover:text-clr-primary-shades">
+						className="mx-1.5 box-content rounded-md bg-slate-200 p-2 text-clr-primary duration-300 hover:text-clr-primary-shades dark:bg-transparent dark:bg-clr-secondary-grad">
 						<FaDownload />
 					</a>
 					<button
-						className="box-content rounded-md bg-clr-secondary-grad p-2 text-clr-primary duration-300 hover:text-clr-primary-shades"
+						className="box-content rounded-md bg-slate-200 p-2 text-clr-primary duration-300 hover:text-clr-primary-shades dark:bg-transparent dark:bg-clr-secondary-grad"
 						onClick={handleCopy}>
 						<FaShare />
 					</button>

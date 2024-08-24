@@ -31,6 +31,9 @@ export default {
 				'clr-green-grad': 'var(--color-green-gradient)',
 				'clr-yellow-grad': 'var(--color-yellow-gradient)',
 				'clr-gray-grad': 'var(--color-gray-gradient)'
+			},
+			boxShadow: {
+				main: 'var(--shadow-main)'
 			}
 		}
 	},

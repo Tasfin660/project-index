@@ -21,7 +21,7 @@ const ContactBox = ({ media, msg, Icon, iClass, copy }: ContactBox) => {
 			<p className="font-medium">{media}</p>
 			<p className="text-sm">{msg}</p>
 			<button
-				className="mt-4 rounded-full bg-clr-gray-grad px-[14px] py-2"
+				className="mt-4 rounded-full bg-slate-200 px-[14px] py-2 dark:bg-transparent dark:bg-clr-gray-grad"
 				onClick={handleCopy}>
 				<Icon className={iClass} />
 			</button>

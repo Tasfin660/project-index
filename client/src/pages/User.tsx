@@ -59,7 +59,7 @@ const User = () => {
 		return (
 			<main className="smooth-rendering mb-16 mt-12">
 				<section className="container -mb-8 grid grid-cols-3 items-start">
-					<div className="flex gap-3">
+					<div className="flex gap-3 text-clr-white">
 						<p
 							className={`flex w-max items-center gap-2 rounded px-2 py-1 text-sm ${framework === 'React' && 'bg-clr-primary'} ${framework === 'Vuejs' && 'bg-clr-green'} ${framework === 'Angular' && 'bg-rose-700'} ${framework === 'Svelte' && 'bg-orange-600'} `}>
 							{framework === 'React' && <FaReact />}
@@ -119,7 +119,7 @@ const User = () => {
 							</div>
 						)}
 						<button
-							className="flex w-max items-center gap-2 rounded bg-clr-gray-grad px-2 py-2 text-sm"
+							className="flex w-max items-center gap-2 rounded bg-clr-gray-grad px-2 py-2 text-sm text-clr-white"
 							onClick={handleCopy}>
 							<FaShare />
 						</button>

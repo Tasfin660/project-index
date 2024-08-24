@@ -13,7 +13,7 @@ function Theme() {
 
 	return (
 		<button
-			className="relative mr-4 box-content flex items-center gap-5 justify-self-end rounded-full bg-clr-secondary-grad p-2.5 text-clr-primary"
+			className="relative mr-4 box-content flex items-center gap-5 justify-self-end rounded-full bg-slate-300 p-2.5 text-clr-primary dark:bg-transparent dark:bg-clr-secondary-grad"
 			onClick={changeTheme}>
 			<MdOutlineLightMode
 				className={`z-[1] duration-300 ${theme == 'light' && 'text-clr-primary'}`}
@@ -25,7 +25,7 @@ function Theme() {
 				className={`z-[1] duration-300 ${theme == 'dark' && 'text-clr-primary'}`}
 			/>
 			<span
-				className={`absolute size-6 rounded-full bg-sky-500/20 ${theme === 'auto' ? 'left-[50%] translate-x-[-50%]' : theme === 'dark' ? 'left-[95%] translate-x-[-100%]' : 'left-[6%] translate-x-0'} transition-[left_transform] duration-300`}></span>
+				className={`absolute size-6 rounded-full bg-slate-100 dark:bg-sky-500/20 ${theme === 'auto' ? 'left-[50%] translate-x-[-50%]' : theme === 'dark' ? 'left-[95%] translate-x-[-100%]' : 'left-[6%] translate-x-0'} transition-[left_transform] duration-300`}></span>
 		</button>
 	)
 }

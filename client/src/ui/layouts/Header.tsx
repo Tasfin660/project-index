@@ -12,7 +12,7 @@ import { SiNuxtdotjs } from 'react-icons/si'
 
 const Header = () => {
 	const iClass =
-		'box-content rounded-md bg-clr-gray-light px-3 py-2.5 text-xl duration-300'
+		'box-content rounded-md bg-slate-300 dark:bg-clr-gray-light px-3 py-2.5 text-xl duration-300'
 
 	return (
 		<header className="flex flex-col items-center text-center">

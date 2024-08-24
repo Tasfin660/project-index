@@ -3,7 +3,7 @@ import { PiGithubLogoFill } from 'react-icons/pi'
 
 export default function Footer() {
 	return (
-		<footer className="container mb-6">
+		<footer className="container mb-6 text-clr-white">
 			<div className="flex items-center rounded-md bg-clr-primary-grad px-6 py-4">
 				<p>
 					Copyright &copy; Tasfin Hasan | Project Index&nbsp;

@@ -6,7 +6,7 @@ const Searchbar = () => {
 			<input
 				type="text"
 				placeholder="Search Project"
-				className="w-64 rounded-full bg-clr-gray-grad py-2 pl-4 pr-11 text-sm"
+				className="w-64 rounded-full bg-slate-300 py-2 pl-4 pr-11 text-sm dark:bg-transparent dark:bg-clr-gray-grad"
 			/>
 			<button
 				className="absolute right-4 top-1/2 -translate-y-1/2 duration-300 hover:text-clr-primary"

@@ -13,7 +13,7 @@ const ProjectCategory = ({ data }: { data: ProjectCategory }) => {
 	const link = title.split(' ').join('-').toLowerCase()
 
 	return (
-		<div className="cursor-context-menu rounded-lg border border-slate-50/10 bg-gradient-to-b from-slate-800/80 to-slate-900 p-6 duration-300 hover:border-clr-primary-shades">
+		<div className="shadow-main cursor-context-menu rounded-lg border border-slate-50/10 bg-slate-100 p-6 duration-300 hover:border-clr-primary-shades dark:bg-transparent dark:bg-gradient-to-b dark:from-slate-800/80 dark:to-slate-900 dark:shadow-none">
 			<div className="flex items-start justify-between">
 				<img
 					src={`/project-category/${image}.png`}

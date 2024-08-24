@@ -40,7 +40,7 @@ const ProjectSlider = () => {
 					onClick={handleLeftSlider}>
 					<MdOutlineKeyboardArrowLeft />
 				</button>
-				<p className="translate-y-[1px]">
+				<p className="translate-y-[1px] text-clr-white">
 					Inspirational Ideas
 					<span className="ml-2.5 rounded-full bg-clr-white px-2 py-[1px] text-sm font-semibold text-clr-gray-dark">
 						{imgIdx + 1}/20

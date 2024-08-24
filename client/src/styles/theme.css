@@ -16,6 +16,8 @@
 	--color-gray-light: #404756;
 	--color-gray-neutral: #23272f;
 	--color-gray-dark: #16181d;
+
+	/* white color set */
 	--color-white: theme(colors.slate.50);
 
 	/* gradients set */
@@ -51,6 +53,11 @@
 		#16181d 1turn
 	);
 	--color-user-gradient: linear-gradient(-30deg, #4158d0, #c850c0, #ffcc70);
+
+	--shadow-main: inset 0 0 0.5px 1px hsla(0, 0%, 100%, 0.1),
+		0 0 0 1px hsla(230, 13%, 9%, 0.075), 0 0.3px 0.4px hsla(230, 13%, 9%, 0.02),
+		0 0.9px 1.5px hsla(230, 13%, 9%, 0.045),
+		0 3.5px 6px hsla(230, 13%, 9%, 0.09);
 }
 
 /* P8bTcw_j;+b:aLHHn\/H 

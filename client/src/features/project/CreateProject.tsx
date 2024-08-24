@@ -59,7 +59,7 @@ const CreateProject = () => {
 
 	return (
 		<form
-			className="blue-bg flex w-[400px] flex-col items-center gap-6 p-6 text-sm"
+			className="dark:blue-bg shadow-main flex w-[400px] flex-col items-center gap-6 rounded-xl bg-slate-100 p-6 text-sm dark:shadow-none"
 			onSubmit={handleSubmit(onSubmit)}>
 			<div className="flex items-center gap-2 text-lg font-medium">
 				<BiSolidAddToQueue />
@@ -74,49 +74,79 @@ const CreateProject = () => {
 			<select
 				className="rounded-md border border-clr-primary p-3"
 				{...reg('category')}>
-				<option value="e-commerce-platforms" className="bg-clr-gray-light">
+				<option
+					value="e-commerce-platforms"
+					className="bg-slate-300 dark:bg-clr-gray-light">
 					E-commerce Platforms
 				</option>
-				<option value="social-networks" className="bg-clr-gray-light">
+				<option
+					value="social-networks"
+					className="bg-slate-300 dark:bg-clr-gray-light">
 					Social Networks
 				</option>
-				<option value="educational-tools" className="bg-clr-gray-light">
+				<option
+					value="educational-tools"
+					className="bg-slate-300 dark:bg-clr-gray-light">
 					Educational Tools
 				</option>
-				<option value="portfolio-websites" className="bg-clr-gray-light">
+				<option
+					value="portfolio-websites"
+					className="bg-slate-300 dark:bg-clr-gray-light">
 					Portfolio Websites
 				</option>
-				<option value="productivity-apps" className="bg-clr-gray-light">
+				<option
+					value="productivity-apps"
+					className="bg-slate-300 dark:bg-clr-gray-light">
 					Productivity Apps
 				</option>
-				<option value="content-management" className="bg-clr-gray-light">
+				<option
+					value="content-management"
+					className="bg-slate-300 dark:bg-clr-gray-light">
 					Content Management
 				</option>
-				<option value="data-visualization" className="bg-clr-gray-light">
+				<option
+					value="data-visualization"
+					className="bg-slate-300 dark:bg-clr-gray-light">
 					Data Visualization
 				</option>
-				<option value="entertainment-platforms" className="bg-clr-gray-light">
+				<option
+					value="entertainment-platforms"
+					className="bg-slate-300 dark:bg-clr-gray-light">
 					Entertainment Platforms
 				</option>
-				<option value="health-and-fitness" className="bg-clr-gray-light">
+				<option
+					value="health-and-fitness"
+					className="bg-slate-300 dark:bg-clr-gray-light">
 					Health and Fitness
 				</option>
-				<option value="finance-management" className="bg-clr-gray-light">
+				<option
+					value="finance-management"
+					className="bg-slate-300 dark:bg-clr-gray-light">
 					Finance Management
 				</option>
-				<option value="booking-systems" className="bg-clr-gray-light">
+				<option
+					value="booking-systems"
+					className="bg-slate-300 dark:bg-clr-gray-light">
 					Booking Systems
 				</option>
-				<option value="social-good" className="bg-clr-gray-light">
+				<option
+					value="social-good"
+					className="bg-slate-300 dark:bg-clr-gray-light">
 					Social Good
 				</option>
-				<option value="personalization-engines" className="bg-clr-gray-light">
+				<option
+					value="personalization-engines"
+					className="bg-slate-300 dark:bg-clr-gray-light">
 					Personalization Engines
 				</option>
-				<option value="ai-ml-applications" className="bg-clr-gray-light">
+				<option
+					value="ai-ml-applications"
+					className="bg-slate-300 dark:bg-clr-gray-light">
 					AI-ML Applications
 				</option>
-				<option value="api-integrations/" className="bg-clr-gray-light">
+				<option
+					value="api-integrations/"
+					className="bg-slate-300 dark:bg-clr-gray-light">
 					API Integrations
 				</option>
 			</select>
@@ -125,7 +155,7 @@ const CreateProject = () => {
 				className="h-[150px] rounded-md border border-clr-primary p-3"
 				{...reg('description')}
 			/>
-			<button className="rounded-lg bg-clr-primary-grad px-2 py-1">
+			<button className="rounded-lg bg-clr-primary-grad px-2 py-1 text-clr-white">
 				Submit
 			</button>
 			<Toaster />

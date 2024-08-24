@@ -36,7 +36,7 @@ const AdminOverview = ({ user }: { user: User }) => {
 	}
 
 	return (
-		<div className="flex w-[550px] items-center gap-3 p-2 text-sm duration-300 hover:bg-blue-950/10">
+		<div className="flex w-[550px] items-center gap-3 p-2 text-sm duration-300 hover:bg-slate-100 dark:hover:bg-blue-950/10">
 			<img src={avatar} alt={fullname} className="size-16 rounded-sm" />
 			<div className="space-y-0.5">
 				<p>{fullname}</p>
@@ -62,13 +62,13 @@ const AdminOverview = ({ user }: { user: User }) => {
 			) : admin_status === 'pending' ? (
 				<div className="ml-auto space-x-4">
 					<button
-						className="rounded-full bg-clr-secondary-grad px-3 py-1.5 font-semibold text-clr-green disabled:cursor-wait disabled:opacity-80"
+						className="rounded-full bg-slate-200 px-3 py-1.5 font-semibold text-clr-green disabled:cursor-wait disabled:opacity-80 dark:bg-transparent dark:bg-clr-secondary-grad"
 						onClick={() => handleReq('accepted')}
 						disabled={loading}>
 						Accept
 					</button>
 					<button
-						className="rounded-full bg-clr-secondary-grad px-3 py-1.5 font-semibold text-clr-red disabled:cursor-wait disabled:opacity-80"
+						className="rounded-full bg-slate-200 px-3 py-1.5 font-semibold text-clr-red disabled:cursor-wait disabled:opacity-80 dark:bg-transparent dark:bg-clr-secondary-grad"
 						onClick={() => handleReq('rejected')}
 						disabled={loading}>
 						Reject
@@ -77,7 +77,7 @@ const AdminOverview = ({ user }: { user: User }) => {
 			) : (
 				<Link
 					to={`/users/${username}`}
-					className="ml-auto rounded-full bg-clr-secondary-grad px-3 py-1.5 font-semibold text-clr-primary">
+					className="ml-auto rounded-full bg-slate-200 px-3 py-1.5 font-semibold text-clr-primary dark:bg-transparent dark:bg-clr-secondary-grad">
 					Check
 				</Link>
 			)}

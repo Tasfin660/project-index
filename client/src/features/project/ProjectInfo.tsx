@@ -72,7 +72,7 @@ const ProjectInfo = ({ project }: { project: Project }) => {
 	return (
 		<section className="blue-bg space-y-4 p-4">
 			<ProjectSlider />
-			<div className="flex items-center gap-3 rounded bg-clr-secondary-grad p-2.5 text-sm">
+			<div className="flex items-center gap-3 rounded bg-slate-200 p-2.5 text-sm dark:bg-transparent dark:bg-clr-secondary-grad">
 				<Image
 					src={avatar as string}
 					alt={username as string}
@@ -106,7 +106,7 @@ const ProjectInfo = ({ project }: { project: Project }) => {
 							Update:
 							<select
 								value={status}
-								className={`ml-3 w-max rounded-full bg-clr-gray-light px-1.5 py-1 text-xs disabled:cursor-not-allowed ${loading && 'disabled:cursor-wait'}`}
+								className={`ml-3 w-max rounded-full bg-slate-300 px-1.5 py-1 text-xs disabled:cursor-not-allowed dark:bg-clr-gray-light ${loading && 'disabled:cursor-wait'}`}
 								disabled={user._id !== owner?._id || loading}
 								onChange={e => handleStatus(e.target.value)}>
 								<option value="Completed">Completed</option>
@@ -114,7 +114,7 @@ const ProjectInfo = ({ project }: { project: Project }) => {
 								<option value="Postponed">Postponed</option>
 							</select>
 							<button
-								className={`ml-auto rounded bg-clr-red-grad px-2 py-0.5 font-medium duration-300 active:opacity-80 disabled:cursor-not-allowed disabled:active:opacity-100 ${loading && 'disabled:cursor-wait disabled:opacity-80'}`}
+								className={`ml-auto rounded bg-clr-red-grad px-2 py-0.5 font-medium text-clr-white duration-300 active:opacity-80 disabled:cursor-not-allowed disabled:active:opacity-100 ${loading && 'disabled:cursor-wait disabled:opacity-80'}`}
 								onClick={handleDelete}
 								disabled={owner?._id !== user?._id || loading}>
 								Delete
@@ -130,7 +130,7 @@ const ProjectInfo = ({ project }: { project: Project }) => {
 						{isstars ? 'Starred' : 'Star'}
 					</button>
 					<button
-						className={`rounded px-2 py-0.5 font-semibold duration-300 active:bg-clr-primary-shades disabled:cursor-not-allowed ${
+						className={`rounded px-2 py-0.5 font-semibold text-clr-white duration-300 active:bg-clr-primary-shades disabled:cursor-not-allowed ${
 							isEnrolled
 								? 'bg-clr-primary disabled:active:bg-clr-primary'
 								: 'bg-sky-500/10 text-clr-primary active:text-clr-white disabled:active:bg-sky-500/10 disabled:active:text-clr-primary'
