@@ -15,8 +15,9 @@ const UserSlider = ({ status }: UserSlider) => {
 	const user = useAppSelector(getGuestUser)
 	const { projects } = user || {}
 
-	const isEmpty =
-		projects?.filter(project => project.status === status).length === 0
+	const filteredProjects = projects?.filter(
+		project => project.status === status
+	)
 
 	const handleScrollLeft = () => {
 		if (sliderRef.current)
@@ -69,13 +70,13 @@ const UserSlider = ({ status }: UserSlider) => {
 						<p className="text-xl font-medium">Postponed</p>
 					</div>
 				)}
-				{projects?.map(
+				{filteredProjects?.map(
 					(project, i) =>
 						project.status === status && (
 							<ProjectOverview key={project._id} project={project} i={i} />
 						)
 				)}
-				{isEmpty && (
+				{filteredProjects?.length === 0 && (
 					<div className="my-auto flex flex-col items-center gap-3 opacity-30">
 						<img
 							src="/errors/empty-list.png"
