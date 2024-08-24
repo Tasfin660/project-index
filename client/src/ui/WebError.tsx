@@ -13,15 +13,19 @@ const WebError = ({ code, msg, btn }: WebError) => {
 
 	return (
 		<div className="container my-16 flex w-max flex-col items-center gap-4">
-			<img src="/errors/error.png" alt="error" className="w-24 opacity-40" />
+			<img
+				src="/errors/error.png"
+				alt="error"
+				className="w-24 opacity-100 dark:opacity-40"
+			/>
 			<p className="flex gap-3">
-				<span className="flex h-[70px] w-[58px] items-center justify-center rounded-lg bg-clr-secondary-grad text-[50px] font-medium text-clr-red">
+				<span className="flex h-[70px] w-[58px] items-center justify-center rounded-lg bg-slate-200 text-[50px] font-medium text-clr-red dark:bg-transparent dark:bg-clr-secondary-grad">
 					{code[0]}
 				</span>
-				<span className="flex h-[70px] w-[58px] items-center justify-center rounded-lg bg-clr-secondary-grad text-[50px] font-medium text-clr-red">
+				<span className="flex h-[70px] w-[58px] items-center justify-center rounded-lg bg-slate-200 text-[50px] font-medium text-clr-red dark:bg-transparent dark:bg-clr-secondary-grad">
 					{code[1]}
 				</span>
-				<span className="flex h-[70px] w-[58px] items-center justify-center rounded-lg bg-clr-secondary-grad text-[50px] font-medium text-clr-red">
+				<span className="flex h-[70px] w-[58px] items-center justify-center rounded-lg bg-slate-200 text-[50px] font-medium text-clr-red dark:bg-transparent dark:bg-clr-secondary-grad">
 					{code[2]}
 				</span>
 			</p>
@@ -42,7 +46,7 @@ const WebError = ({ code, msg, btn }: WebError) => {
 					</button>
 					<Link
 						to="/auth/login"
-						className="box-content rounded bg-clr-primary-grad px-2.5 py-1">
+						className="box-content rounded bg-clr-primary-grad px-2.5 py-1 text-clr-white">
 						Login
 					</Link>
 				</div>
@@ -56,7 +60,7 @@ const WebError = ({ code, msg, btn }: WebError) => {
 					</button>
 					<Link
 						to="/"
-						className="box-content rounded bg-clr-primary-grad px-2.5 py-1">
+						className="box-content rounded bg-clr-primary-grad px-2.5 py-1 text-clr-white">
 						Home
 					</Link>
 				</div>

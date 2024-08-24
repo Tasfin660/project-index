@@ -84,7 +84,7 @@ const Register = () => {
 
 	return (
 		<form
-			className="auth-form flex flex-col items-center gap-6 rounded-lg p-6"
+			className="auth-form flex flex-col items-center gap-6 rounded-lg p-6 text-clr-white"
 			onSubmit={handleSubmit(onSubmit)}>
 			<p className="font-heading text-2xl font-bold">Registers as developer</p>
 			<input

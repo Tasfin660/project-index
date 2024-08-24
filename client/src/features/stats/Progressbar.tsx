@@ -40,7 +40,7 @@ const Progressbar = ({
 						styles={buildStyles({
 							pathTransitionDuration: 1,
 							pathColor: `var(--color-${colors[status]})`,
-							trailColor: 'rgba(23, 37, 84, .4)'
+							trailColor: 'var(--trail-color)'
 						})}>
 						<Icon className={`text-2xl text-clr-${colors[status]}`} />
 					</CircularProgressbarWithChildren>

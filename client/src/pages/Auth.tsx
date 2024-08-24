@@ -15,7 +15,7 @@ const Auth = () => {
 	}, [form, cookies.jwt, navigate])
 
 	return (
-		<main className="mx-auto my-36 w-[350px]">
+		<main className="mx-auto my-16 w-[350px]">
 			{form === 'login' && <Login />}
 			{form === 'register' && <Register />}
 		</main>

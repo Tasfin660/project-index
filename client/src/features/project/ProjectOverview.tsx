@@ -14,7 +14,7 @@ const ProjectOverview = ({ project, i }: { project: Project; i: number }) => {
 	const isEnrolled = developers?.includes(user?._id as string)
 
 	return (
-		<div className="shadow-main relative flex w-[330px] shrink-0 flex-col rounded-lg border border-transparent bg-slate-100 p-4 duration-300 hover:border-clr-white dark:bg-transparent dark:bg-clr-secondary-grad dark:shadow-none">
+		<div className="shadow-main relative flex w-[330px] shrink-0 flex-col overflow-hidden rounded-lg border border-transparent bg-slate-100 p-4 duration-300 hover:border-clr-white dark:bg-transparent dark:bg-clr-secondary-grad dark:shadow-none">
 			<h2 className="-mt-1.5 line-clamp-1 break-all pr-8 font-heading text-2xl font-medium">
 				{title}
 			</h2>
