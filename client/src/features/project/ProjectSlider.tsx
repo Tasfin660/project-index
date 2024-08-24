@@ -27,7 +27,7 @@ const ProjectSlider = () => {
 				{Array.from({ length: 20 }, (_, i) => (
 					<img
 						key={i}
-						src={`/project-inspirations/img-${i}.jpg`}
+						src={`/project-inspirations/img-${i}.webp`}
 						alt={`img ${i}`}
 						className="duration-[0.6s]"
 						style={{ translate: `${-100 * imgIdx}%` }}

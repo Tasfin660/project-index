@@ -1,4 +1,4 @@
-import projectCategories from '../data/project-categories.json'
+import projectCategories from '../data/Project-Index.categories.json'
 import ProjectCategory from '../features/project/ProjectCategory'
 import Header from '../ui/layouts/Header'
 

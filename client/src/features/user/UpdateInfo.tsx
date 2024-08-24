@@ -58,10 +58,6 @@ const UpdateInfo = () => {
 	}
 
 	useEffect(() => {
-		toast.dismiss()
-	}, [])
-
-	useEffect(() => {
 		Object.keys(errors).length > 0 &&
 			toast(
 				<ToastError

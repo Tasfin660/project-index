@@ -1,12 +1,12 @@
+import { useState } from 'react'
+import { useCookies } from 'react-cookie'
 import { FaCalendarAlt } from 'react-icons/fa'
 import { HiClock } from 'react-icons/hi'
 import { Link } from 'react-router-dom'
-import { formatDate, requestedAt } from '../../utils/helpers'
-import { User } from '../../types/userTypes'
-import { useCookies } from 'react-cookie'
-import { useState } from 'react'
-import { updateAdminStatus } from '../../services/apiUser'
 import { useAppDispatch } from '../../hooks/hooks'
+import { updateAdminStatus } from '../../services/apiUser'
+import { User } from '../../types/userTypes'
+import { formatDate, requestedAt } from '../../utils/helpers'
 import { setAdminStatus } from '../user/userSlice'
 
 const AdminOverview = ({ user }: { user: User }) => {

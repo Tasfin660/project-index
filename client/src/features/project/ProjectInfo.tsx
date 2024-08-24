@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { useCookies } from 'react-cookie'
 import { FaCalendarAlt, FaCrown, FaLongArrowAltRight } from 'react-icons/fa'
 import { HiUser } from 'react-icons/hi2'
@@ -16,7 +17,6 @@ import { formatDate, formatLength } from '../../utils/helpers'
 import { getUser } from '../user/userSlice'
 import { setStatus, toggleDevelopersList, toggleStar } from './projectSlice'
 import ProjectSlider from './ProjectSlider'
-import { useState } from 'react'
 
 const ProjectInfo = ({ project }: { project: Project }) => {
 	const { pathname } = useLocation()
@@ -43,28 +43,28 @@ const ProjectInfo = ({ project }: { project: Project }) => {
 
 	const handleJoin = async () => {
 		setLoading(true)
-		await updateDevelopers(projectId, cookies.jwt)
+		await updateDevelopers(projectId as string, cookies.jwt)
 		setLoading(false)
 		dispatch(toggleDevelopersList(userId))
 	}
 
 	const handleStar = async () => {
 		setLoading(true)
-		await updateStars(projectId, cookies.jwt)
+		await updateStars(projectId as string, cookies.jwt)
 		setLoading(false)
 		dispatch(toggleStar(userId))
 	}
 
 	const handleDelete = async () => {
 		setLoading(true)
-		await deleteProject(projectId, cookies.jwt)
+		await deleteProject(projectId as string, cookies.jwt)
 		setLoading(false)
 		navigate(`/projects/${pathname.split('/')[2]}/all`, { replace: true })
 	}
 
 	const handleStatus = async (value: string) => {
 		setLoading(true)
-		await updateStatus(projectId, value, cookies.jwt)
+		await updateStatus(projectId as string, value, cookies.jwt)
 		setLoading(false)
 		dispatch(setStatus(value))
 	}
@@ -98,7 +98,7 @@ const ProjectInfo = ({ project }: { project: Project }) => {
 					{formatDate(created_at as string)}
 				</div>
 			</div>
-			<p className="text-xs">{description}</p>
+			<p className="text-sm">{description}</p>
 			{cookies.jwt && (
 				<div className="flex items-center text-sm">
 					{user?.role === 'Admin' ? (

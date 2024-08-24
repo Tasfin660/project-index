@@ -1,0 +1,2072 @@
+[
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd88345192cc"
+		},
+		"title": "ShopEase",
+		"category": "e-commerce-platforms",
+		"description": "An all-in-one platform for small businesses to set up online stores quickly.",
+		"status": "Completed",
+		"owner": {
+			"$oid": "66c5d7be89cc800083723a63"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d7be89cc800083723a63"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d7be89cc800083723a63"
+			}
+		],
+		"created_at": "Fri Jan 05 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd88345192cd"
+		},
+		"title": "MegaCart",
+		"category": "e-commerce-platforms",
+		"description": "A scalable e-commerce solution for large retailers with integrated analytics.",
+		"status": "Ongoing",
+		"owner": {
+			"$oid": "66c5d77789cc800083723a61"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d77789cc800083723a61"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d77789cc800083723a61"
+			}
+		],
+		"created_at": "Tue Feb 12 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd88345192ce"
+		},
+		"title": "QuickBuy",
+		"category": "e-commerce-platforms",
+		"description": "A fast checkout system for online shops to reduce cart abandonment rates.",
+		"status": "Completed",
+		"owner": {
+			"$oid": "66c9a52395f1de3a7ffcde87"
+		},
+		"stars": [
+			{
+				"$oid": "66c9a52395f1de3a7ffcde87"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c9a52395f1de3a7ffcde87"
+			}
+		],
+		"created_at": "Wed Mar 20 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd88345192cf"
+		},
+		"title": "FashionFrenzy",
+		"category": "e-commerce-platforms",
+		"description": "An e-commerce platform specialized for fashion brands and boutiques.",
+		"status": "Postponed",
+		"owner": {
+			"$oid": "66c5d83a89cc800083723a69"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d83a89cc800083723a69"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d83a89cc800083723a69"
+			}
+		],
+		"created_at": "Thu Apr 15 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd88345192d0"
+		},
+		"title": "GadgetWorld",
+		"category": "e-commerce-platforms",
+		"description": "A marketplace focused on electronic gadgets with a user-friendly interface.",
+		"status": "Ongoing",
+		"owner": {
+			"$oid": "66c5d7be89cc800083723a63"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d7be89cc800083723a63"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d7be89cc800083723a63"
+			}
+		],
+		"created_at": "Mon May 25 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd88345192d1"
+		},
+		"title": "ShopNow",
+		"category": "e-commerce-platforms",
+		"description": "A mobile-first e-commerce platform for on-the-go shopping.",
+		"status": "Completed",
+		"owner": {
+			"$oid": "66c5d77789cc800083723a61"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d77789cc800083723a61"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d77789cc800083723a61"
+			}
+		],
+		"created_at": "Wed Jun 30 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd88345192d2"
+		},
+		"title": "ChatterBox",
+		"category": "social-networks",
+		"description": "A social network centered around topic-based discussions.",
+		"status": "Ongoing",
+		"owner": {
+			"$oid": "66c9a52395f1de3a7ffcde87"
+		},
+		"stars": [
+			{
+				"$oid": "66c9a52395f1de3a7ffcde87"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c9a52395f1de3a7ffcde87"
+			}
+		],
+		"created_at": "Thu Jan 25 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd88345192d3"
+		},
+		"title": "FriendConnect",
+		"category": "social-networks",
+		"description": "A platform to connect and share moments with friends and family.",
+		"status": "Completed",
+		"owner": {
+			"$oid": "66c5d77789cc800083723a61"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d77789cc800083723a61"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d77789cc800083723a61"
+			}
+		],
+		"created_at": "Mon Feb 28 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd88345192d4"
+		},
+		"title": "TravelBuddy",
+		"category": "social-networks",
+		"description": "A social network for travelers to share experiences and plan trips together.",
+		"status": "Postponed",
+		"owner": {
+			"$oid": "66c5d7be89cc800083723a63"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d7be89cc800083723a63"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d7be89cc800083723a63"
+			}
+		],
+		"created_at": "Wed Mar 22 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd88345192d5"
+		},
+		"title": "Foodie",
+		"category": "social-networks",
+		"description": "A platform for food enthusiasts to share recipes and dining experiences.",
+		"status": "Completed",
+		"owner": {
+			"$oid": "66c5d77789cc800083723a61"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d77789cc800083723a61"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d77789cc800083723a61"
+			}
+		],
+		"created_at": "Tue Apr 18 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd88345192d6"
+		},
+		"title": "GamerZone",
+		"category": "social-networks",
+		"description": "A social network for gamers to connect, share gameplay, and discuss strategies.",
+		"status": "Ongoing",
+		"owner": {
+			"$oid": "66c5d52689cc800083723a32"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d52689cc800083723a32"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d52689cc800083723a32"
+			}
+		],
+		"created_at": "Sat May 29 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd88345192d7"
+		},
+		"title": "PetPal",
+		"category": "social-networks",
+		"description": "A community-driven platform for pet owners to connect and share tips.",
+		"status": "Completed",
+		"owner": {
+			"$oid": "66c5d7be89cc800083723a63"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d7be89cc800083723a63"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d7be89cc800083723a63"
+			}
+		],
+		"created_at": "Thu Jun 03 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd88345192d8"
+		},
+		"title": "LearnHub",
+		"category": "educational-tools",
+		"description": "An online learning platform with courses across various disciplines.",
+		"status": "Completed",
+		"owner": {
+			"$oid": "66c9a52395f1de3a7ffcde87"
+		},
+		"stars": [
+			{
+				"$oid": "66c9a52395f1de3a7ffcde87"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c9a52395f1de3a7ffcde87"
+			}
+		],
+		"created_at": "Tue Jan 10 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd88345192d9"
+		},
+		"title": "MathMaster",
+		"category": "educational-tools",
+		"description": "An app for mastering mathematics with interactive exercises and quizzes.",
+		"status": "Ongoing",
+		"owner": {
+			"$oid": "66c5d7be89cc800083723a63"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d7be89cc800083723a63"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d7be89cc800083723a63"
+			}
+		],
+		"created_at": "Wed Feb 23 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd88345192da"
+		},
+		"title": "CodeCraft",
+		"category": "educational-tools",
+		"description": "A platform for learning programming through hands-on coding challenges.",
+		"status": "Completed",
+		"owner": {
+			"$oid": "66c5d77789cc800083723a61"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d77789cc800083723a61"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d77789cc800083723a61"
+			}
+		],
+		"created_at": "Fri Mar 19 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd88345192db"
+		},
+		"title": "ScienceLab",
+		"category": "educational-tools",
+		"description": "An educational tool for virtual science experiments and simulations.",
+		"status": "Postponed",
+		"owner": {
+			"$oid": "66c5d52689cc800083723a32"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d52689cc800083723a32"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d52689cc800083723a32"
+			}
+		],
+		"created_at": "Mon Apr 17 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd88345192dc"
+		},
+		"title": "HistoryQuest",
+		"category": "educational-tools",
+		"description": "An interactive app for exploring historical events and timelines.",
+		"status": "Ongoing",
+		"owner": {
+			"$oid": "66c9a2f495f1de3a7ffcde73"
+		},
+		"stars": [
+			{
+				"$oid": "66c9a2f495f1de3a7ffcde73"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c9a2f495f1de3a7ffcde73"
+			}
+		],
+		"created_at": "Sun May 27 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd88345192dd"
+		},
+		"title": "LanguageLearner",
+		"category": "educational-tools",
+		"description": "A language learning app with audio and visual aids to boost retention.",
+		"status": "Completed",
+		"owner": {
+			"$oid": "66c5d7be89cc800083723a63"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d7be89cc800083723a63"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d7be89cc800083723a63"
+			}
+		],
+		"created_at": "Thu Jun 15 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd88345192de"
+		},
+		"title": "PortfolioPro",
+		"category": "portfolio-websites",
+		"description": "A sleek and customizable portfolio builder for creative professionals.",
+		"status": "Ongoing",
+		"owner": {
+			"$oid": "66c9a52395f1de3a7ffcde87"
+		},
+		"stars": [
+			{
+				"$oid": "66c9a52395f1de3a7ffcde87"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c9a52395f1de3a7ffcde87"
+			}
+		],
+		"created_at": "Fri Jan 08 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd88345192df"
+		},
+		"title": "DevShowcase",
+		"category": "portfolio-websites",
+		"description": "A platform for developers to create and share their project portfolios.",
+		"status": "Completed",
+		"owner": {
+			"$oid": "66c5d77789cc800083723a61"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d77789cc800083723a61"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d77789cc800083723a61"
+			}
+		],
+		"created_at": "Mon Feb 11 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd88345192e0"
+		},
+		"title": "Artfolio",
+		"category": "portfolio-websites",
+		"description": "An online portfolio website for artists to display their artwork.",
+		"status": "Postponed",
+		"owner": {
+			"$oid": "66c5d52689cc800083723a32"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d52689cc800083723a32"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d52689cc800083723a32"
+			}
+		],
+		"created_at": "Sat Mar 13 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd88345192e1"
+		},
+		"title": "BizPort",
+		"category": "portfolio-websites",
+		"description": "A business portfolio website for showcasing corporate projects and achievements.",
+		"status": "Ongoing",
+		"owner": {
+			"$oid": "66c9a2f495f1de3a7ffcde73"
+		},
+		"stars": [
+			{
+				"$oid": "66c9a2f495f1de3a7ffcde73"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c9a2f495f1de3a7ffcde73"
+			}
+		],
+		"created_at": "Thu Apr 26 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd88345192e2"
+		},
+		"title": "Photofolio",
+		"category": "portfolio-websites",
+		"description": "A portfolio website template designed specifically for photographers.",
+		"status": "Completed",
+		"owner": {
+			"$oid": "66c9a52395f1de3a7ffcde87"
+		},
+		"stars": [
+			{
+				"$oid": "66c9a52395f1de3a7ffcde87"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c9a52395f1de3a7ffcde87"
+			}
+		],
+		"created_at": "Tue May 24 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd88345192e3"
+		},
+		"title": "Writer's Desk",
+		"category": "portfolio-websites",
+		"description": "A writing portfolio platform for authors and bloggers to showcase their work.",
+		"status": "Ongoing",
+		"owner": {
+			"$oid": "66c5d52689cc800083723a32"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d52689cc800083723a32"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d52689cc800083723a32"
+			}
+		],
+		"created_at": "Wed Jun 13 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd88345192e4"
+		},
+		"title": "WellnessTracker",
+		"category": "health-and-fitness",
+		"description": "An app for tracking daily health and wellness activities.",
+		"status": "Completed",
+		"owner": {
+			"$oid": "66c5d52689cc800083723a32"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d52689cc800083723a32"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d52689cc800083723a32"
+			}
+		],
+		"created_at": "Sat Jan 27 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd88345192e5"
+		},
+		"title": "FitLife",
+		"category": "health-and-fitness",
+		"description": "A comprehensive fitness app with workout routines and nutrition guides.",
+		"status": "Ongoing",
+		"owner": {
+			"$oid": "66c5d7be89cc800083723a63"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d7be89cc800083723a63"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d7be89cc800083723a63"
+			}
+		],
+		"created_at": "Thu Feb 22 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd88345192e6"
+		},
+		"title": "Mindful",
+		"category": "health-and-fitness",
+		"description": "An app focused on mindfulness practices and meditation sessions.",
+		"status": "Postponed",
+		"owner": {
+			"$oid": "66c9a52395f1de3a7ffcde87"
+		},
+		"stars": [
+			{
+				"$oid": "66c9a52395f1de3a7ffcde87"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c9a52395f1de3a7ffcde87"
+			}
+		],
+		"created_at": "Sun Mar 14 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd88345192e7"
+		},
+		"title": "DietMate",
+		"category": "health-and-fitness",
+		"description": "A diet tracking app with personalized meal plans and calorie counter.",
+		"status": "Completed",
+		"owner": {
+			"$oid": "66c5d83a89cc800083723a69"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d83a89cc800083723a69"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d83a89cc800083723a69"
+			}
+		],
+		"created_at": "Mon Apr 28 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd88345192e8"
+		},
+		"title": "YogaFlow",
+		"category": "health-and-fitness",
+		"description": "A yoga app offering guided sessions for all skill levels.",
+		"status": "Ongoing",
+		"owner": {
+			"$oid": "66c5d77789cc800083723a61"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d77789cc800083723a61"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d77789cc800083723a61"
+			}
+		],
+		"created_at": "Tue May 23 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd88345192e9"
+		},
+		"title": "SleepWell",
+		"category": "health-and-fitness",
+		"description": "An app for improving sleep patterns with relaxation techniques.",
+		"status": "Completed",
+		"owner": {
+			"$oid": "66c5d52689cc800083723a32"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d52689cc800083723a32"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d52689cc800083723a32"
+			}
+		],
+		"created_at": "Thu Jun 30 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd88345192ea"
+		},
+		"title": "BudgetTrack",
+		"category": "finance-management",
+		"description": "An app for tracking personal budgets and expenses.",
+		"status": "Completed",
+		"owner": {
+			"$oid": "66c9a2f495f1de3a7ffcde73"
+		},
+		"stars": [
+			{
+				"$oid": "66c9a2f495f1de3a7ffcde73"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c9a2f495f1de3a7ffcde73"
+			}
+		],
+		"created_at": "Mon Jan 15 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd88345192eb"
+		},
+		"title": "InvestSmart",
+		"category": "finance-management",
+		"description": "A platform for managing investments and monitoring market trends.",
+		"status": "Ongoing",
+		"owner": {
+			"$oid": "66c5d52689cc800083723a32"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d52689cc800083723a32"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d52689cc800083723a32"
+			}
+		],
+		"created_at": "Wed Feb 14 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd88345192ec"
+		},
+		"title": "ExpenseTracker",
+		"category": "finance-management",
+		"description": "A simple tool for recording and analyzing daily expenses.",
+		"status": "Postponed",
+		"owner": {
+			"$oid": "66c5d7be89cc800083723a63"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d7be89cc800083723a63"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d7be89cc800083723a63"
+			}
+		],
+		"created_at": "Fri Mar 08 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd88345192ed"
+		},
+		"title": "WealthManager",
+		"category": "finance-management",
+		"description": "A comprehensive financial management system for individuals and businesses.",
+		"status": "Completed",
+		"owner": {
+			"$oid": "66c5d52689cc800083723a32"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d52689cc800083723a32"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d52689cc800083723a32"
+			}
+		],
+		"created_at": "Mon Apr 15 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd88345192ee"
+		},
+		"title": "TaxHelper",
+		"category": "finance-management",
+		"description": "An app designed to assist with tax preparation and filing.",
+		"status": "Ongoing",
+		"owner": {
+			"$oid": "66c9a52395f1de3a7ffcde87"
+		},
+		"stars": [
+			{
+				"$oid": "66c9a52395f1de3a7ffcde87"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c9a52395f1de3a7ffcde87"
+			}
+		],
+		"created_at": "Thu May 09 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd88345192ef"
+		},
+		"title": "LoanTracker",
+		"category": "finance-management",
+		"description": "A tool for managing and tracking loans and payments.",
+		"status": "Completed",
+		"owner": {
+			"$oid": "66c5d77789cc800083723a61"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d77789cc800083723a61"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d77789cc800083723a61"
+			}
+		],
+		"created_at": "Sat Jun 22 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd88345192f0"
+		},
+		"title": "BookMyEvent",
+		"category": "booking-systems",
+		"description": "A booking system for scheduling and managing events and appointments.",
+		"status": "Completed",
+		"owner": {
+			"$oid": "66c9a52395f1de3a7ffcde87"
+		},
+		"stars": [
+			{
+				"$oid": "66c9a52395f1de3a7ffcde87"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c9a52395f1de3a7ffcde87"
+			}
+		],
+		"created_at": "Tue Jan 09 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd88345192f1"
+		},
+		"title": "ReserveNow",
+		"category": "booking-systems",
+		"description": "An online reservation system for restaurants and venues.",
+		"status": "Ongoing",
+		"owner": {
+			"$oid": "66c5d83a89cc800083723a69"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d83a89cc800083723a69"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d83a89cc800083723a69"
+			}
+		],
+		"created_at": "Wed Feb 07 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd88345192f2"
+		},
+		"title": "HotelBooking",
+		"category": "booking-systems",
+		"description": "A platform for booking hotel rooms with real-time availability.",
+		"status": "Postponed",
+		"owner": {
+			"$oid": "66c5d7be89cc800083723a63"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d7be89cc800083723a63"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d7be89cc800083723a63"
+			}
+		],
+		"created_at": "Fri Mar 15 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd88345192f3"
+		},
+		"title": "EventManager",
+		"category": "booking-systems",
+		"description": "A tool for organizing and managing large-scale events and conferences.",
+		"status": "Completed",
+		"owner": {
+			"$oid": "66c9a2f495f1de3a7ffcde73"
+		},
+		"stars": [
+			{
+				"$oid": "66c9a2f495f1de3a7ffcde73"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c9a2f495f1de3a7ffcde73"
+			}
+		],
+		"created_at": "Mon Apr 22 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd88345192f4"
+		},
+		"title": "AppointmentScheduler",
+		"category": "booking-systems",
+		"description": "An app for scheduling and managing appointments for professionals.",
+		"status": "Ongoing",
+		"owner": {
+			"$oid": "66c5d83a89cc800083723a69"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d83a89cc800083723a69"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d83a89cc800083723a69"
+			}
+		],
+		"created_at": "Tue May 28 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd88345192f5"
+		},
+		"title": "ClassEnroll",
+		"category": "booking-systems",
+		"description": "A system for booking and managing classes and workshops.",
+		"status": "Completed",
+		"owner": {
+			"$oid": "66c5d52689cc800083723a32"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d52689cc800083723a32"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d52689cc800083723a32"
+			}
+		],
+		"created_at": "Thu Jun 27 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd88345192f6"
+		},
+		"title": "CharityConnect",
+		"category": "social-good",
+		"description": "A platform connecting charities with volunteers and donors.",
+		"status": "Completed",
+		"owner": {
+			"$oid": "66c5d7be89cc800083723a63"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d7be89cc800083723a63"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d7be89cc800083723a63"
+			}
+		],
+		"created_at": "Tue Jan 16 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd88345192f7"
+		},
+		"title": "EcoSupport",
+		"category": "social-good",
+		"description": "An app for supporting environmental causes and tracking eco-friendly habits.",
+		"status": "Ongoing",
+		"owner": {
+			"$oid": "66c9a52395f1de3a7ffcde87"
+		},
+		"stars": [
+			{
+				"$oid": "66c9a52395f1de3a7ffcde87"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c9a52395f1de3a7ffcde87"
+			}
+		],
+		"created_at": "Thu Feb 08 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd88345192f8"
+		},
+		"title": "HealthAid",
+		"category": "social-good",
+		"description": "A platform for health-related charitable initiatives and support.",
+		"status": "Postponed",
+		"owner": {
+			"$oid": "66c5d83a89cc800083723a69"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d83a89cc800083723a69"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d83a89cc800083723a69"
+			}
+		],
+		"created_at": "Sat Mar 16 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd88345192f9"
+		},
+		"title": "EducationForAll",
+		"category": "social-good",
+		"description": "A platform aiming to provide educational resources to underprivileged communities.",
+		"status": "Completed",
+		"owner": {
+			"$oid": "66c5d7be89cc800083723a63"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d7be89cc800083723a63"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d7be89cc800083723a63"
+			}
+		],
+		"created_at": "Mon Apr 14 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd88345192fa"
+		},
+		"title": "SafeHaven",
+		"category": "social-good",
+		"description": "An app for connecting people with local support networks for safety and security.",
+		"status": "Ongoing",
+		"owner": {
+			"$oid": "66c9a2f495f1de3a7ffcde73"
+		},
+		"stars": [
+			{
+				"$oid": "66c9a2f495f1de3a7ffcde73"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c9a2f495f1de3a7ffcde73"
+			}
+		],
+		"created_at": "Wed May 08 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd88345192fb"
+		},
+		"title": "CommunityFirst",
+		"category": "social-good",
+		"description": "A platform for fostering community engagement and local initiatives.",
+		"status": "Completed",
+		"owner": {
+			"$oid": "66c5d52689cc800083723a32"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d52689cc800083723a32"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d52689cc800083723a32"
+			}
+		],
+		"created_at": "Sat Jun 29 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd88345192fc"
+		},
+		"title": "RecommenderX",
+		"category": "personalization-engines",
+		"description": "A recommendation engine for personalizing user experiences across websites.",
+		"status": "Completed",
+		"owner": {
+			"$oid": "66c5d7be89cc800083723a63"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d7be89cc800083723a63"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d7be89cc800083723a63"
+			}
+		],
+		"created_at": "Mon Jan 22 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd88345192fd"
+		},
+		"title": "CustomFit",
+		"category": "personalization-engines",
+		"description": "A tool for creating personalized content based on user behavior.",
+		"status": "Ongoing",
+		"owner": {
+			"$oid": "66c9a52395f1de3a7ffcde87"
+		},
+		"stars": [
+			{
+				"$oid": "66c9a52395f1de3a7ffcde87"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c9a52395f1de3a7ffcde87"
+			}
+		],
+		"created_at": "Wed Feb 21 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd88345192fe"
+		},
+		"title": "ProfileEnhancer",
+		"category": "personalization-engines",
+		"description": "An app for enhancing user profiles with customized suggestions and features.",
+		"status": "Postponed",
+		"owner": {
+			"$oid": "66c5d7be89cc800083723a63"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d7be89cc800083723a63"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d7be89cc800083723a63"
+			}
+		],
+		"created_at": "Thu Mar 14 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd88345192ff"
+		},
+		"title": "ContentCurator",
+		"category": "personalization-engines",
+		"description": "A platform for curating content based on user interests and preferences.",
+		"status": "Completed",
+		"owner": {
+			"$oid": "66c5d52689cc800083723a32"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d52689cc800083723a32"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d52689cc800083723a32"
+			}
+		],
+		"created_at": "Tue Apr 16 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd8834519300"
+		},
+		"title": "UserJourney",
+		"category": "personalization-engines",
+		"description": "An app for mapping and enhancing user journeys across digital platforms.",
+		"status": "Ongoing",
+		"owner": {
+			"$oid": "66c5d83a89cc800083723a69"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d83a89cc800083723a69"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d83a89cc800083723a69"
+			}
+		],
+		"created_at": "Thu May 30 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd8834519301"
+		},
+		"title": "AdaptiveAI",
+		"category": "personalization-engines",
+		"description": "A machine learning-based engine for adaptive personalization.",
+		"status": "Completed",
+		"owner": {
+			"$oid": "66c5d7be89cc800083723a63"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d7be89cc800083723a63"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d7be89cc800083723a63"
+			}
+		],
+		"created_at": "Fri Jun 28 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd8834519302"
+		},
+		"title": "SmartPredict",
+		"category": "ai-ml-applications",
+		"description": "An application for predictive analytics using machine learning algorithms.",
+		"status": "Completed",
+		"owner": {
+			"$oid": "66c9a52395f1de3a7ffcde87"
+		},
+		"stars": [
+			{
+				"$oid": "66c9a52395f1de3a7ffcde87"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c9a52395f1de3a7ffcde87"
+			}
+		],
+		"created_at": "Wed Jan 31 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd8834519303"
+		},
+		"title": "MLVision",
+		"category": "ai-ml-applications",
+		"description": "A tool for image recognition and computer vision applications.",
+		"status": "Ongoing",
+		"owner": {
+			"$oid": "66c5d7be89cc800083723a63"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d7be89cc800083723a63"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d7be89cc800083723a63"
+			}
+		],
+		"created_at": "Tue Feb 27 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd8834519304"
+		},
+		"title": "ChatBotPro",
+		"category": "ai-ml-applications",
+		"description": "An advanced chatbot platform with natural language processing capabilities.",
+		"status": "Postponed",
+		"owner": {
+			"$oid": "66c5d83a89cc800083723a69"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d83a89cc800083723a69"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d83a89cc800083723a69"
+			}
+		],
+		"created_at": "Thu Mar 21 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd8834519305"
+		},
+		"title": "ForecastAI",
+		"category": "ai-ml-applications",
+		"description": "An AI-driven forecasting tool for business and market predictions.",
+		"status": "Completed",
+		"owner": {
+			"$oid": "66c9a52395f1de3a7ffcde87"
+		},
+		"stars": [
+			{
+				"$oid": "66c9a52395f1de3a7ffcde87"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c9a52395f1de3a7ffcde87"
+			}
+		],
+		"created_at": "Mon Apr 08 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd8834519306"
+		},
+		"title": "DataInsight",
+		"category": "ai-ml-applications",
+		"description": "A platform for gaining insights from large datasets using AI.",
+		"status": "Ongoing",
+		"owner": {
+			"$oid": "66c5d7be89cc800083723a63"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d7be89cc800083723a63"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d7be89cc800083723a63"
+			}
+		],
+		"created_at": "Thu May 09 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd8834519307"
+		},
+		"title": "SentimentAnalyzer",
+		"category": "ai-ml-applications",
+		"description": "An application for analyzing and interpreting sentiment from textual data.",
+		"status": "Completed",
+		"owner": {
+			"$oid": "66c5d52689cc800083723a32"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d52689cc800083723a32"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d52689cc800083723a32"
+			}
+		],
+		"created_at": "Sat Jun 15 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd8834519308"
+		},
+		"title": "WeatherAPI",
+		"category": "api-integrations",
+		"description": "A weather API integration for accessing real-time weather data.",
+		"status": "Completed",
+		"owner": {
+			"$oid": "66c5d83a89cc800083723a69"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d83a89cc800083723a69"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d83a89cc800083723a69"
+			}
+		],
+		"created_at": "Tue Jan 23 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd8834519309"
+		},
+		"title": "PaymentGateway",
+		"category": "api-integrations",
+		"description": "An integration for handling online payment transactions.",
+		"status": "Ongoing",
+		"owner": {
+			"$oid": "66c5d77789cc800083723a61"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d77789cc800083723a61"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d77789cc800083723a61"
+			}
+		],
+		"created_at": "Fri Feb 16 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd883451930a"
+		},
+		"title": "SocialMediaAPI",
+		"category": "api-integrations",
+		"description": "A social media API integration for posting and retrieving data.",
+		"status": "Postponed",
+		"owner": {
+			"$oid": "66c5d52689cc800083723a32"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d52689cc800083723a32"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d52689cc800083723a32"
+			}
+		],
+		"created_at": "Thu Mar 07 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd883451930b"
+		},
+		"title": "EmailService",
+		"category": "api-integrations",
+		"description": "An email service integration for sending and managing emails.",
+		"status": "Completed",
+		"owner": {
+			"$oid": "66c9a2f495f1de3a7ffcde73"
+		},
+		"stars": [
+			{
+				"$oid": "66c9a2f495f1de3a7ffcde73"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c9a2f495f1de3a7ffcde73"
+			}
+		],
+		"created_at": "Mon Apr 29 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd883451930c"
+		},
+		"title": "GeoLocationAPI",
+		"category": "api-integrations",
+		"description": "A geolocation API integration for mapping and location-based services.",
+		"status": "Ongoing",
+		"owner": {
+			"$oid": "66c9a52395f1de3a7ffcde87"
+		},
+		"stars": [
+			{
+				"$oid": "66c9a52395f1de3a7ffcde87"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c9a52395f1de3a7ffcde87"
+			}
+		],
+		"created_at": "Wed May 22 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd883451930d"
+		},
+		"title": "TranslationAPI",
+		"category": "api-integrations",
+		"description": "An API for translating text between different languages.",
+		"status": "Completed",
+		"owner": {
+			"$oid": "66c5d7be89cc800083723a63"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d7be89cc800083723a63"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d7be89cc800083723a63"
+			}
+		],
+		"created_at": "Sat Jun 08 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd883451930e"
+		},
+		"title": "TaskMaster",
+		"category": "productivity-apps",
+		"description": "A task management app with advanced features like reminders and collaboration.",
+		"status": "Ongoing",
+		"owner": {
+			"$oid": "66c9a2f495f1de3a7ffcde73"
+		},
+		"stars": [
+			{
+				"$oid": "66c9a2f495f1de3a7ffcde73"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c9a2f495f1de3a7ffcde73"
+			}
+		],
+		"created_at": "Tue Feb 20 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd883451930f"
+		},
+		"title": "TimeTracker",
+		"category": "productivity-apps",
+		"description": "An app for tracking time spent on various tasks and projects.",
+		"status": "Completed",
+		"owner": {
+			"$oid": "66c5d7be89cc800083723a63"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d7be89cc800083723a63"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d7be89cc800083723a63"
+			}
+		],
+		"created_at": "Fri Mar 15 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd8834519310"
+		},
+		"title": "NotePro",
+		"category": "productivity-apps",
+		"description": "A note-taking application with rich-text editing and organization features.",
+		"status": "Ongoing",
+		"owner": {
+			"$oid": "66c5d77789cc800083723a61"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d77789cc800083723a61"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d77789cc800083723a61"
+			}
+		],
+		"created_at": "Wed Apr 17 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd8834519311"
+		},
+		"title": "FocusMode",
+		"category": "productivity-apps",
+		"description": "An app designed to help users focus by blocking distractions.",
+		"status": "Postponed",
+		"owner": {
+			"$oid": "66c9a2f495f1de3a7ffcde73"
+		},
+		"stars": [
+			{
+				"$oid": "66c9a2f495f1de3a7ffcde73"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c9a2f495f1de3a7ffcde73"
+			}
+		],
+		"created_at": "Mon May 13 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd8834519312"
+		},
+		"title": "HabitBuilder",
+		"category": "productivity-apps",
+		"description": "A habit-tracking app with reminders and progress tracking features.",
+		"status": "Completed",
+		"owner": {
+			"$oid": "66c5d77789cc800083723a61"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d77789cc800083723a61"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d77789cc800083723a61"
+			}
+		],
+		"created_at": "Thu Jun 06 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd8834519313"
+		},
+		"title": "ProjectPlanner",
+		"category": "productivity-apps",
+		"description": "A project management tool for planning and organizing tasks.",
+		"status": "Ongoing",
+		"owner": {
+			"$oid": "66c5d83a89cc800083723a69"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d83a89cc800083723a69"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d83a89cc800083723a69"
+			}
+		],
+		"created_at": "Fri Jul 12 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd8834519314"
+		},
+		"title": "CMSPlus",
+		"category": "content-management",
+		"description": "A content management system with a focus on ease of use and flexibility.",
+		"status": "Completed",
+		"owner": {
+			"$oid": "66c9a52395f1de3a7ffcde87"
+		},
+		"stars": [
+			{
+				"$oid": "66c9a52395f1de3a7ffcde87"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c9a52395f1de3a7ffcde87"
+			}
+		],
+		"created_at": "Thu Jan 18 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd8834519315"
+		},
+		"title": "ContentFlow",
+		"category": "content-management",
+		"description": "A content workflow management tool for teams.",
+		"status": "Ongoing",
+		"owner": {
+			"$oid": "66c5d83a89cc800083723a69"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d83a89cc800083723a69"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d83a89cc800083723a69"
+			}
+		],
+		"created_at": "Sat Feb 10 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd8834519316"
+		},
+		"title": "BlogManager",
+		"category": "content-management",
+		"description": "An application for managing blogs and scheduling posts.",
+		"status": "Postponed",
+		"owner": {
+			"$oid": "66c5d52689cc800083723a32"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d52689cc800083723a32"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d52689cc800083723a32"
+			}
+		],
+		"created_at": "Tue Mar 14 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd8834519317"
+		},
+		"title": "PageEditor",
+		"category": "content-management",
+		"description": "A web-based page editor with drag-and-drop functionality.",
+		"status": "Completed",
+		"owner": {
+			"$oid": "66c9a2f495f1de3a7ffcde73"
+		},
+		"stars": [
+			{
+				"$oid": "66c9a2f495f1de3a7ffcde73"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c9a2f495f1de3a7ffcde73"
+			}
+		],
+		"created_at": "Thu Apr 11 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd8834519318"
+		},
+		"title": "MediaLibrary",
+		"category": "content-management",
+		"description": "A tool for managing and organizing digital media assets.",
+		"status": "Ongoing",
+		"owner": {
+			"$oid": "66c5d77789cc800083723a61"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d77789cc800083723a61"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d77789cc800083723a61"
+			}
+		],
+		"created_at": "Mon May 14 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd8834519319"
+		},
+		"title": "SEOHelper",
+		"category": "content-management",
+		"description": "An app that provides SEO recommendations for content.",
+		"status": "Completed",
+		"owner": {
+			"$oid": "66c9a2f495f1de3a7ffcde73"
+		},
+		"stars": [
+			{
+				"$oid": "66c9a2f495f1de3a7ffcde73"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c9a2f495f1de3a7ffcde73"
+			}
+		],
+		"created_at": "Fri Jun 20 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd883451931a"
+		},
+		"title": "ChartGen",
+		"category": "data-visualization",
+		"description": "A tool for generating customizable charts and graphs.",
+		"status": "Ongoing",
+		"owner": {
+			"$oid": "66c5d7be89cc800083723a63"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d7be89cc800083723a63"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d7be89cc800083723a63"
+			}
+		],
+		"created_at": "Sun Jan 21 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd883451931b"
+		},
+		"title": "DataMapper",
+		"category": "data-visualization",
+		"description": "An application for visualizing data on interactive maps.",
+		"status": "Completed",
+		"owner": {
+			"$oid": "66c9a52395f1de3a7ffcde87"
+		},
+		"stars": [
+			{
+				"$oid": "66c9a52395f1de3a7ffcde87"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c9a52395f1de3a7ffcde87"
+			}
+		],
+		"created_at": "Tue Feb 13 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd883451931c"
+		},
+		"title": "VizTool",
+		"category": "data-visualization",
+		"description": "A data visualization tool with support for various chart types.",
+		"status": "Ongoing",
+		"owner": {
+			"$oid": "66c5d77789cc800083723a61"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d77789cc800083723a61"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d77789cc800083723a61"
+			}
+		],
+		"created_at": "Thu Mar 29 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd883451931d"
+		},
+		"title": "DashBuilder",
+		"category": "data-visualization",
+		"description": "An app for creating custom data dashboards.",
+		"status": "Postponed",
+		"owner": {
+			"$oid": "66c5d52689cc800083723a32"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d52689cc800083723a32"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d52689cc800083723a32"
+			}
+		],
+		"created_at": "Sat Apr 20 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd883451931e"
+		},
+		"title": "GraphMaster",
+		"category": "data-visualization",
+		"description": "A graphing tool with advanced features for large datasets.",
+		"status": "Completed",
+		"owner": {
+			"$oid": "66c5d7be89cc800083723a63"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d7be89cc800083723a63"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d7be89cc800083723a63"
+			}
+		],
+		"created_at": "Wed May 15 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd883451931f"
+		},
+		"title": "InsightViz",
+		"category": "data-visualization",
+		"description": "A platform for visualizing business insights and metrics.",
+		"status": "Ongoing",
+		"owner": {
+			"$oid": "66c9a52395f1de3a7ffcde87"
+		},
+		"stars": [
+			{
+				"$oid": "66c9a52395f1de3a7ffcde87"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c9a52395f1de3a7ffcde87"
+			}
+		],
+		"created_at": "Fri Jun 21 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd8834519320"
+		},
+		"title": "StreamFlix",
+		"category": "entertainment-platforms",
+		"description": "A streaming platform for movies and TV shows.",
+		"status": "Completed",
+		"owner": {
+			"$oid": "66c5d83a89cc800083723a69"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d83a89cc800083723a69"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d83a89cc800083723a69"
+			}
+		],
+		"created_at": "Mon Jan 15 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd8834519321"
+		},
+		"title": "MusicHub",
+		"category": "entertainment-platforms",
+		"description": "A music streaming service with curated playlists.",
+		"status": "Ongoing",
+		"owner": {
+			"$oid": "66c5d7be89cc800083723a63"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d7be89cc800083723a63"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d7be89cc800083723a63"
+			}
+		],
+		"created_at": "Thu Feb 08 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd8834519322"
+		},
+		"title": "GameArena",
+		"category": "entertainment-platforms",
+		"description": "An online platform for multiplayer gaming.",
+		"status": "Postponed",
+		"owner": {
+			"$oid": "66c5d77789cc800083723a61"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d77789cc800083723a61"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d77789cc800083723a61"
+			}
+		],
+		"created_at": "Sat Mar 24 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd8834519323"
+		},
+		"title": "PodCastPro",
+		"category": "entertainment-platforms",
+		"description": "A platform for streaming and discovering podcasts.",
+		"status": "Completed",
+		"owner": {
+			"$oid": "66c5d83a89cc800083723a69"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d83a89cc800083723a69"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d83a89cc800083723a69"
+			}
+		],
+		"created_at": "Wed Apr 11 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd8834519324"
+		},
+		"title": "BookLounge",
+		"category": "entertainment-platforms",
+		"description": "An online platform for reading and discussing books.",
+		"status": "Ongoing",
+		"owner": {
+			"$oid": "66c5d52689cc800083723a32"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d52689cc800083723a32"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d52689cc800083723a32"
+			}
+		],
+		"created_at": "Fri May 04 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	},
+	{
+		"_id": {
+			"$oid": "66c9d895ab6ddd8834519325"
+		},
+		"title": "VidCreator",
+		"category": "entertainment-platforms",
+		"description": "A video creation and editing platform for content creators.",
+		"status": "Ongoing",
+		"owner": {
+			"$oid": "66c5d7be89cc800083723a63"
+		},
+		"stars": [
+			{
+				"$oid": "66c5d7be89cc800083723a63"
+			}
+		],
+		"developers": [
+			{
+				"$oid": "66c5d7be89cc800083723a63"
+			}
+		],
+		"created_at": "Sun Jun 10 2024 18:01:05 GMT+0600 (Bangladesh Standard Time)"
+	}
+]

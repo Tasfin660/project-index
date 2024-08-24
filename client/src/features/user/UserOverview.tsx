@@ -20,6 +20,7 @@ const UserOverview = ({ user }: { user: User }) => {
 			<div className="flex w-max flex-col items-center justify-center gap-4 justify-self-center rounded-md bg-slate-50/20 px-[14px] shadow-lg">
 				<a
 					href={github || '#'}
+					target="_blank"
 					className="box-content block text-xl text-clr-white">
 					<PiGithubLogoFill />
 				</a>

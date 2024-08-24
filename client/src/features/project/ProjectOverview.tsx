@@ -14,7 +14,7 @@ const ProjectOverview = ({ project, i }: { project: Project; i: number }) => {
 	const isEnrolled = developers?.includes(user?._id as string)
 
 	return (
-		<div className="relative w-[330px] shrink-0 rounded-lg border border-transparent bg-clr-secondary-grad p-4 duration-300 hover:border-clr-white">
+		<div className="relative flex w-[330px] shrink-0 flex-col rounded-lg border border-transparent bg-clr-secondary-grad p-4 duration-300 hover:border-clr-white">
 			<h2 className="-mt-1.5 line-clamp-1 break-all pr-8 font-heading text-2xl font-medium">
 				{title}
 			</h2>
@@ -30,7 +30,7 @@ const ProjectOverview = ({ project, i }: { project: Project; i: number }) => {
 				)}
 			</div>
 			<p className="my-4 line-clamp-3 text-xs">{description}</p>
-			<div className="flex gap-3">
+			<div className="mt-auto flex gap-3">
 				<div className="flex items-center gap-1.5 rounded-full bg-slate-50/10 px-2.5 py-0.5 text-sm">
 					<TiStarFullOutline /> {stars?.length}
 				</div>

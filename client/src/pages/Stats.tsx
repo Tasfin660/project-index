@@ -33,8 +33,8 @@ const Stats = () => {
 	const userFrameworks = formatStats(stats?.user_frameworks)
 
 	useEffect(() => {
-		toast.dismiss()
 		dispatch(fetchStats())
+		return () => toast.dismiss()
 	}, [dispatch])
 
 	if (status === 'failed')

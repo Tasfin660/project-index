@@ -16,10 +16,10 @@ const Filterbar = ({ type, res, onFilter }: Filterbar) => {
 				{type === 'users' ? (
 					<>
 						<option value="all">All Developers</option>
-						<option value="react">React</option>
-						<option value="vuejs">Vuejs</option>
-						<option value="angular">Angular</option>
-						<option value="svelte">Svelte</option>
+						<option value="React">React</option>
+						<option value="Vuejs">Vuejs</option>
+						<option value="Angular">Angular</option>
+						<option value="Svelte">Svelte</option>
 					</>
 				) : (
 					<>

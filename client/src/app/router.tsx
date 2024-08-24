@@ -3,15 +3,15 @@ import Admin from '../pages/Admin'
 import Auth from '../pages/Auth'
 import ErrorPage from '../pages/ErrorPage'
 import Home from '../pages/Home'
+import NotFound from '../pages/NotFound'
 import Project from '../pages/Project'
 import Projects from '../pages/Projects'
+import Settings from '../pages/Settings'
 import Stats from '../pages/Stats'
+import Unauthorized from '../pages/Unauthorized'
 import User from '../pages/User'
 import Users from '../pages/Users'
-import Settings from '../pages/Settings'
 import MainLayout from '../ui/layouts/MainLayout'
-import Unauthorized from '../pages/Unauthorized'
-import NotFound from '../pages/NotFound'
 
 const router = createBrowserRouter([
 	{
@@ -48,7 +48,7 @@ const router = createBrowserRouter([
 				element: <Settings />
 			},
 			{
-				path: '/stats',
+				path: 'stats',
 				element: <Stats />
 			},
 			{

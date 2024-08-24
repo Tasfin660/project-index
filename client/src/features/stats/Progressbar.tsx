@@ -2,8 +2,8 @@ import {
 	buildStyles,
 	CircularProgressbarWithChildren
 } from 'react-circular-progressbar'
-import ProgressProvider from '../../ui/ProgressProvider'
 import { IconType } from 'react-icons/lib'
+import ProgressProvider from '../../ui/ProgressProvider'
 
 interface Progressbar {
 	status: 'Completed' | 'Ongoing' | 'Postponed'

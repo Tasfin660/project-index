@@ -1,11 +1,11 @@
-import { useLocation } from 'react-router-dom'
-import ProjectQuery from './ProjectQuery'
-import { IoCopy } from 'react-icons/io5'
-import { FaDownload, FaShare } from 'react-icons/fa'
-import { useSelector } from 'react-redux'
-import { getUser } from '../user/userSlice'
 import toast, { Toaster } from 'react-hot-toast'
+import { FaDownload, FaShare } from 'react-icons/fa'
+import { IoCopy } from 'react-icons/io5'
+import { useSelector } from 'react-redux'
+import { useLocation } from 'react-router-dom'
 import { ToastCopy, toastReset } from '../../ui/ToastElements'
+import { getUser } from '../user/userSlice'
+import ProjectQuery from './ProjectQuery'
 
 interface ProjectDetails {
 	title: string

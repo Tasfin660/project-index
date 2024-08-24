@@ -45,4 +45,4 @@ const ToastError = ({ err }: { err: string }) => {
 	)
 }
 
-export { toastReset, ToastCopy, ToastLoading, ToastSuccess, ToastError }
+export { ToastCopy, ToastError, ToastLoading, toastReset, ToastSuccess }

@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { useCookies } from 'react-cookie'
 import toast, { Toaster } from 'react-hot-toast'
 import { FaAngular, FaCrown, FaReact, FaShare, FaVuejs } from 'react-icons/fa'
 import { PiGithubLogoFill } from 'react-icons/pi'
@@ -7,17 +8,16 @@ import { useLocation } from 'react-router-dom'
 import { fetchUser, setAdminReq } from '../features/user/userSlice'
 import UserSlider from '../features/user/UserSlider'
 import { useAppDispatch, useAppSelector } from '../hooks/hooks'
-import Image from '../ui/Image'
-import WebLoader from '../ui/WebLoader'
-import { ToastCopy, toastReset } from '../ui/ToastElements'
 import { updateAdminStatus } from '../services/apiUser'
-import { useCookies } from 'react-cookie'
+import Image from '../ui/Image'
+import { ToastCopy, toastReset } from '../ui/ToastElements'
+import WebLoader from '../ui/WebLoader'
 
 const User = () => {
 	const { pathname } = useLocation()
 	const [loading, setLoading] = useState(false)
 	const [cookies] = useCookies(['jwt'])
-	const { status, guestUser, error } = useAppSelector(state => state.user)
+	const { status, user, guestUser, error } = useAppSelector(state => state.user)
 	const dispatch = useAppDispatch()
 	const url = pathname.split('/')[2]
 	const {
@@ -34,6 +34,8 @@ const User = () => {
 
 	useEffect(() => {
 		dispatch(fetchUser(pathname.split('/')[2] as string))
+
+		return () => toast.dismiss()
 	}, [pathname, dispatch])
 
 	const handleReq = async () => {
@@ -91,23 +93,27 @@ const User = () => {
 						</div>
 					</div>
 					<div className="flex gap-3 justify-self-end">
-						{admin_status === 'idle' && (
-							<button
-								className="flex w-max items-center gap-2 rounded bg-clr-primary px-2 py-1 text-sm duration-300 active:bg-clr-primary-shades disabled:cursor-wait disabled:opacity-80"
-								onClick={handleReq}
-								disabled={loading}>
-								Request for admin?
-							</button>
-						)}
-						{admin_status === 'pending' && (
-							<p className="flex w-max items-center gap-2 rounded bg-clr-white px-2 py-1 font-heading text-sm font-semibold italic text-clr-gray-dark">
-								Request is pending....
-							</p>
-						)}
-						{admin_status === 'rejected' && (
-							<p className="flex w-max items-center gap-2 rounded bg-red-100 px-2 py-1 text-sm font-medium text-clr-red">
-								Request rejected!
-							</p>
+						{user?._id === guestUser?._id && (
+							<div>
+								{admin_status === 'idle' && (
+									<button
+										className="flex w-max items-center gap-2 rounded bg-clr-primary px-2 py-1 text-sm duration-300 active:bg-clr-primary-shades disabled:cursor-wait disabled:opacity-80"
+										onClick={handleReq}
+										disabled={loading}>
+										Request for admin?
+									</button>
+								)}
+								{admin_status === 'pending' && (
+									<p className="flex w-max items-center gap-2 rounded bg-clr-white px-2 py-1 font-heading text-sm font-semibold italic text-clr-gray-dark">
+										Request is pending....
+									</p>
+								)}
+								{admin_status === 'rejected' && (
+									<p className="flex w-max items-center gap-2 rounded bg-red-100 px-2 py-1 text-sm font-medium text-clr-red">
+										Request rejected!
+									</p>
+								)}
+							</div>
 						)}
 						<button
 							className="flex w-max items-center gap-2 rounded bg-clr-gray-grad px-2 py-2 text-sm"
