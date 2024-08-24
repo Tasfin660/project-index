@@ -51,6 +51,7 @@
 		height: 210px;
 		width: 40px;
 		background-color: var(--color-white);
+		transition: all 0.3s;
 	}
 }
 :root[theme='dark'] {
@@ -62,6 +63,7 @@
 		height: 210px;
 		width: 40px;
 		background-color: var(--color-secondary);
+		transition: all 0.3s;
 	}
 }
 /* Stat page owner img gradient */

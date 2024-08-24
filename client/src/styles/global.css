@@ -5,7 +5,7 @@
 
 @layer components {
 	.blue-bg {
-		@apply shadow-main rounded-xl border-2 border-none bg-slate-100 dark:border-blue-600/20 dark:bg-blue-900/10 dark:shadow-none;
+		@apply shadow-main rounded-xl bg-slate-100 dark:border-2 dark:border-blue-600/20 dark:bg-blue-900/10 dark:shadow-none;
 	}
 }
 
