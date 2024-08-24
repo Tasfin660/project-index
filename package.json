@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "scripts": {
     "start": "cd server && node src/index.js",
     "build": "cd client && npm run build",

@@ -49,7 +49,9 @@ const User = () => {
 	}
 
 	const handleCopy = () => {
-		navigator.clipboard.writeText(`https://www.vercel.app/users/${url}`)
+		navigator.clipboard.writeText(
+			`https://project-index-omega.vercel.app/users/${url}`
+		)
 		toast(<ToastCopy msg="Link copied to clipboard!" />, toastReset)
 	}
 

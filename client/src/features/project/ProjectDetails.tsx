@@ -21,7 +21,9 @@ const ProjectDetails = ({ title, status, developers }: ProjectDetails) => {
 	const isEnrolled = developers?.includes(user?._id as string)
 
 	const handleCopy = () => {
-		navigator.clipboard.writeText(`https://www.vercel.app${location.pathname}`)
+		navigator.clipboard.writeText(
+			`https://project-index-omega.vercel.app${location.pathname}`
+		)
 		toast(<ToastCopy msg="Link copied to clipboard!" />, toastReset)
 	}
 
