@@ -5,9 +5,8 @@ const Searchbar = () => {
 		<form className="relative justify-self-end">
 			<input
 				type="text"
-				placeholder="Project Id"
+				placeholder="Search Project"
 				className="w-64 rounded-full bg-clr-gray-grad py-2 pl-4 pr-11 text-sm"
-				required
 			/>
 			<button
 				className="absolute right-4 top-1/2 -translate-y-1/2 duration-300 hover:text-clr-primary"

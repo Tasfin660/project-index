@@ -2,7 +2,7 @@ import { LoginData, RegisterData } from '../types/authTypes'
 
 const register = async (userData: RegisterData) => {
 	try {
-		const res = await fetch(`${import.meta.env.VITE_API}/users/register`, {
+		const res = await fetch('/api/v1/users/register', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'
@@ -20,7 +20,7 @@ const register = async (userData: RegisterData) => {
 
 const login = async (userData: LoginData) => {
 	try {
-		const res = await fetch(`${import.meta.env.VITE_API}/users/login`, {
+		const res = await fetch(`/api/v1/users/login`, {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'

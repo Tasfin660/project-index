@@ -2,7 +2,7 @@ import { Project } from '../types/projectTypes'
 
 const createProject = async (projectData: Project, token: string) => {
 	try {
-		const res = await fetch(`${import.meta.env.VITE_API}/projects`, {
+		const res = await fetch('/api/v1/projects', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',
@@ -20,7 +20,7 @@ const createProject = async (projectData: Project, token: string) => {
 }
 
 const updateDevelopers = async (projectId: string, token: string) => {
-	await fetch(`${import.meta.env.VITE_API}/projects/developers`, {
+	await fetch('/api/v1/projects/developers', {
 		method: 'PUT',
 		headers: {
 			'Content-Type': 'application/json',
@@ -33,7 +33,7 @@ const updateDevelopers = async (projectId: string, token: string) => {
 }
 
 const updateStars = async (projectId: string, token: string) => {
-	await fetch(`${import.meta.env.VITE_API}/projects/stars`, {
+	await fetch('/api/v1/projects/stars', {
 		method: 'PUT',
 		headers: {
 			'Content-Type': 'application/json',
@@ -46,7 +46,7 @@ const updateStars = async (projectId: string, token: string) => {
 }
 
 const deleteProject = async (projectId: string, token: string) => {
-	await fetch(`${import.meta.env.VITE_API}/projects/${projectId}`, {
+	await fetch(`/api/v1/projects/${projectId}`, {
 		method: 'DELETE',
 		headers: {
 			Authorization: `Bearer ${token}`
@@ -59,7 +59,7 @@ const updateStatus = async (
 	value: string,
 	token: string
 ) => {
-	await fetch(`${import.meta.env.VITE_API}/projects/status`, {
+	await fetch('/api/v1/projects/status', {
 		method: 'PUT',
 		headers: {
 			'Content-Type': 'application/json',

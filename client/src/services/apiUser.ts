@@ -5,7 +5,7 @@ const updateAdminStatus = async (
 	userId: string,
 	token: string
 ) => {
-	await fetch(`${import.meta.env.VITE_API}/users/admin-status`, {
+	await fetch('/api/v1/users/admin-status', {
 		method: 'PUT',
 		headers: {
 			'Content-Type': 'application/json',
@@ -19,7 +19,7 @@ const updateAdminStatus = async (
 }
 
 const updateInfo = async (data: UpdateInfo, token: string) => {
-	const res = await fetch(`${import.meta.env.VITE_API}/users/info`, {
+	const res = await fetch('/api/v1/users/info', {
 		method: 'PUT',
 		headers: {
 			'Content-Type': 'application/json',
@@ -33,7 +33,7 @@ const updateInfo = async (data: UpdateInfo, token: string) => {
 
 const updatePassword = async (data: UpdatePassword, token: string) => {
 	try {
-		const res = await fetch(`${import.meta.env.VITE_API}/users/password`, {
+		const res = await fetch('/api/v1/users/password', {
 			method: 'PUT',
 			headers: {
 				'Content-Type': 'application/json',

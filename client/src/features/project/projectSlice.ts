@@ -5,9 +5,7 @@ export const fetchProjects = createAsyncThunk<Project[], string>(
 	'projects/fetchProjects',
 	async category => {
 		try {
-			const res = await fetch(
-				`${import.meta.env.VITE_API}/projects/${category}`
-			)
+			const res = await fetch(`/api/v1/projects/${category}`)
 			const { status, message, data } = await res.json()
 			if (status === 'fail') throw new Error(message)
 			return data
@@ -23,9 +21,7 @@ export const fetchProject = createAsyncThunk<
 	{ category: string; projectId: string }
 >('projects/fetchProject', async ({ category, projectId }) => {
 	try {
-		const res = await fetch(
-			`${import.meta.env.VITE_API}/projects/${category}/${projectId}`
-		)
+		const res = await fetch(`/api/v1/projects/${category}/${projectId}`)
 		const { status, message, data } = await res.json()
 		if (status === 'fail') throw new Error(message)
 		return data
@@ -37,7 +33,7 @@ export const fetchProject = createAsyncThunk<
 
 export const fetchStats = createAsyncThunk('projects/fetchStats', async () => {
 	try {
-		const res = await fetch(`${import.meta.env.VITE_API}/projects/stats`)
+		const res = await fetch('/api/v1/projects/stats')
 		const { status, message, project_status, user_frameworks } =
 			await res.json()
 		if (status !== 'success') throw new Error(message)

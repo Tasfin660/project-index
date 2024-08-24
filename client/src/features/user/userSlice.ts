@@ -5,7 +5,7 @@ export const fetchUsers = createAsyncThunk<User[]>(
 	'users/fetchUsers',
 	async () => {
 		try {
-			const res = await fetch(`${import.meta.env.VITE_API}/users`)
+			const res = await fetch('/api/v1/users')
 			const { status, message, data } = await res.json()
 			if (status !== 'success') throw new Error(message)
 			return data
@@ -20,7 +20,7 @@ export const fetchUser = createAsyncThunk<User, string>(
 	'users/fetchUser',
 	async username => {
 		try {
-			const res = await fetch(`${import.meta.env.VITE_API}/users/${username}`)
+			const res = await fetch(`/api/v1/users/${username}`)
 			const { status, message, data } = await res.json()
 			if (status === 'fail') throw new Error(message)
 			return data

@@ -33,9 +33,12 @@ const User = () => {
 	} = guestUser || {}
 
 	useEffect(() => {
-		dispatch(fetchUser(pathname.split('/')[2] as string))
-
+		toast.dismiss()
 		return () => toast.dismiss()
+	}, [])
+
+	useEffect(() => {
+		dispatch(fetchUser(pathname.split('/')[2] as string))
 	}, [pathname, dispatch])
 
 	const handleReq = async () => {

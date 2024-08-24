@@ -10,6 +10,7 @@ const Settings = () => {
 	const [cookies] = useCookies(['jwt'])
 
 	useEffect(() => {
+		toast.dismiss()
 		return () => toast.dismiss()
 	}, [])
 
