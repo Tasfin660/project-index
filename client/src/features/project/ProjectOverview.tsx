@@ -14,7 +14,7 @@ const ProjectOverview = ({ project, i }: { project: Project; i: number }) => {
 	const isEnrolled = developers?.includes(user?._id as string)
 
 	return (
-		<div className="shadow-main relative flex w-[330px] shrink-0 flex-col overflow-hidden rounded-lg border border-transparent bg-slate-100 p-4 duration-300 hover:border-clr-white dark:bg-transparent dark:bg-clr-secondary-grad dark:shadow-none">
+		<li className="relative flex w-[330px] shrink-0 flex-col overflow-hidden rounded-lg border border-transparent bg-slate-100 p-4 shadow-main duration-300 hover:border-clr-white dark:bg-transparent dark:bg-clr-secondary-grad dark:shadow-none">
 			<h2 className="-mt-1.5 line-clamp-1 break-all pr-8 font-heading text-2xl font-medium">
 				{title}
 			</h2>
@@ -46,7 +46,7 @@ const ProjectOverview = ({ project, i }: { project: Project; i: number }) => {
 			<span className="serialclip absolute right-0 top-0 flex h-8 w-8 items-center justify-center rounded-bl-2xl bg-clr-primary pb-1 font-medium text-clr-white dark:bg-clr-white dark:text-clr-gray-dark">
 				{i + 1}
 			</span>
-		</div>
+		</li>
 	)
 }
 

@@ -36,7 +36,7 @@ const AdminOverview = ({ user }: { user: User }) => {
 	}
 
 	return (
-		<div className="flex w-[550px] items-center gap-3 p-2 text-sm duration-300 hover:bg-slate-100 dark:hover:bg-blue-950/10">
+		<li className="flex w-[550px] items-center gap-3 p-2 text-sm duration-300 hover:bg-slate-100 dark:hover:bg-blue-950/10">
 			<img src={avatar} alt={fullname} className="size-16 rounded-sm" />
 			<div className="space-y-0.5">
 				<p>{fullname}</p>
@@ -81,7 +81,7 @@ const AdminOverview = ({ user }: { user: User }) => {
 					Check
 				</Link>
 			)}
-		</div>
+		</li>
 	)
 }
 

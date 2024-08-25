@@ -1,4 +1,7 @@
 {
+  "name": "project-index",
+  "version": "1.0.0",
+  "description": "Project Index, A react redux practice project.",
   "type": "module",
   "scripts": {
     "start": "cd server && node src/index.js",
@@ -7,5 +10,22 @@
     "install:server": "cd server && npm install",
     "install:client": "cd client && npm install",
     "install": "npm run install:server && npm run install:client"
-  }
+  },
+  "keywords": [
+    "project-index"
+  ],
+  "author": "Tasfin Hasan <tasfinhasan660@gmail.com>",
+  "license": "MIT",
+  "homepage": "hhttps://project-index-omega.vercel.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Tasfin660/project-index"
+  },
+  "bugs": {
+    "url": "https://github.com/Tasfin660/project-index/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "private": true
 }

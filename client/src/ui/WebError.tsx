@@ -12,7 +12,7 @@ const WebError = ({ code, msg, btn }: WebError) => {
 	const navigate = useNavigate()
 
 	return (
-		<div className="container my-16 flex w-max flex-col items-center gap-4">
+		<main className="container my-16 flex w-max flex-col items-center gap-4">
 			<img
 				src="/errors/error.png"
 				alt="error"
@@ -65,7 +65,7 @@ const WebError = ({ code, msg, btn }: WebError) => {
 					</Link>
 				</div>
 			)}
-		</div>
+		</main>
 	)
 }
 

@@ -6,11 +6,11 @@ const Home = () => {
 	return (
 		<main className="container my-16 space-y-16">
 			<Header />
-			<section className="grid grid-cols-[repeat(4,300px)] justify-center gap-10">
+			<ul className="grid grid-cols-[repeat(4,300px)] justify-center gap-10">
 				{projectCategories.map(category => (
 					<ProjectCategory key={category.id} data={category} />
 				))}
-			</section>
+			</ul>
 		</main>
 	)
 }

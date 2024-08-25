@@ -32,11 +32,11 @@ const Users = () => {
 					res={filteredUsers.length}
 					onFilter={handleFilter}
 				/>
-				<section className="grid grid-cols-5 gap-8">
+				<ul className="grid grid-cols-5 gap-8">
 					{filteredUsers.map((user: User) => (
 						<UserOverview key={user._id} user={user} />
 					))}
-				</section>
+				</ul>
 			</main>
 		)
 

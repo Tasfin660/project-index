@@ -8,7 +8,7 @@ const UserOverview = ({ user }: { user: User }) => {
 	const { fullname, username, avatar, github } = user
 
 	return (
-		<div className="grid grid-cols-[180px_1fr] rounded-lg bg-clr-primary-grad px-3 pb-3 pt-[14px]">
+		<li className="grid grid-cols-[180px_1fr] rounded-lg bg-clr-primary-grad px-3 pb-3 pt-[14px]">
 			<div className="flex flex-col items-center gap-2">
 				<Image
 					src={avatar}
@@ -30,7 +30,7 @@ const UserOverview = ({ user }: { user: User }) => {
 					<FaEye />
 				</Link>
 			</div>
-		</div>
+		</li>
 	)
 }
 

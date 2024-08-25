@@ -29,27 +29,27 @@ const Admin = () => {
 		return (
 			<main className="smooth-rendering container my-16 flex items-start justify-center gap-24">
 				<section className="space-y-12">
-					<div className="divide-y divide-blue-600/20">
-						<p className="mb-4 text-xl font-medium">Admins</p>
+					<ul className="divide-y divide-blue-600/20">
+						<li className="mb-4 text-xl font-medium">Admins</li>
 						{users.map(
 							user =>
 								user.role === 'Admin' && (
 									<AdminOverview key={user._id} user={user} />
 								)
 						)}
-					</div>
-					<div className="divide-y divide-blue-600/20">
-						<div className="mb-4 flex w-max gap-5">
+					</ul>
+					<ul className="divide-y divide-blue-600/20">
+						<li className="mb-4 flex w-max gap-5">
 							<p className="text-xl font-medium">Pending Requests</p>
 							<span className="loader--pending scale-[0.3]"></span>
-						</div>
+						</li>
 						{users.map(
 							user =>
 								user.admin_status?.includes('pending') && (
 									<AdminOverview key={user._id} user={user} />
 								)
 						)}
-					</div>
+					</ul>
 				</section>
 				<CreateProject />
 			</main>

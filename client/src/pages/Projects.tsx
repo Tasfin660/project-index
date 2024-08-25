@@ -33,11 +33,11 @@ const Projects = () => {
 		return (
 			<main className="smooth-rendering container mb-16 mt-4">
 				<Filterbar res={filteredProjects.length} onFilter={handleFilter} />
-				<main className="grid grid-cols-[repeat(4,max-content)] gap-10">
+				<ul className="grid grid-cols-[repeat(4,max-content)] gap-10">
 					{filteredProjects.map((project: Project, i: number) => (
 						<ProjectOverview key={project._id} project={project} i={i} />
 					))}
-				</main>
+				</ul>
 			</main>
 		)
 	if (status === 'failed') {
